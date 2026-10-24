@@ -95,6 +95,7 @@ html.dark {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  -webkit-tap-highlight-color: transparent;
 }
 
 html {
@@ -497,6 +498,15 @@ html.dark .home-dropdown-item.active {
   flex-shrink: 0;
 }
 
+/* Mobile & Tablet Header: Dark Mode, RTL, and CTA buttons are strictly inside the mobile menu drawer */
+@media (max-width: 1119px) {
+  .site-header .header-actions .util-btn,
+  .site-header .header-actions .header-cta-btn,
+  .site-header .header-actions .login-btn {
+    display: none !important;
+  }
+}
+
 /* Icon Buttons (RTL, Dark Mode) */
 .util-btn {
   width: 38px;
@@ -662,7 +672,28 @@ html.dark .drawer-login-btn:hover {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: background-color var(--transition-fast);
+  outline: none;
+  -webkit-tap-highlight-color: transparent !important;
+  user-select: none;
+  -webkit-user-select: none;
+  transition: all var(--transition-fast);
+}
+
+.menu-toggle-btn:focus,
+.menu-toggle-btn:focus-visible,
+.menu-toggle-btn:active {
+  outline: none !important;
+  border-color: var(--gold-accent) !important;
+  color: var(--gold-accent) !important;
+  background: var(--bg-surface) !important;
+  box-shadow: 0 0 0 2px var(--gold-glow) !important;
+  -webkit-tap-highlight-color: transparent !important;
+}
+
+.menu-toggle-btn:hover {
+  background: var(--bg-elevated);
+  border-color: var(--gold-accent);
+  color: var(--gold-accent);
 }
 
 @media (min-width: 1120px) {
@@ -799,6 +830,25 @@ html.dark .drawer-login-btn:hover {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  outline: none;
+  -webkit-tap-highlight-color: transparent !important;
+  transition: all var(--transition-fast);
+}
+
+.drawer-close-btn:focus,
+.drawer-close-btn:focus-visible,
+.drawer-close-btn:active {
+  outline: none !important;
+  border-color: var(--gold-accent) !important;
+  color: var(--gold-accent) !important;
+  box-shadow: 0 0 0 2px var(--gold-glow) !important;
+  -webkit-tap-highlight-color: transparent !important;
+}
+
+.drawer-close-btn:hover {
+  background: var(--bg-surface);
+  color: var(--text-primary);
+  border-color: var(--gold-accent);
 }
 
 .drawer-close-btn svg {
@@ -6279,6 +6329,7 @@ html.dark .contact-status-chip {
   min-height: 1.7rem;
   display: -webkit-box;
   -webkit-line-clamp: 1;
+  line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -6291,6 +6342,7 @@ html.dark .contact-status-chip {
   min-height: 4.1rem;
   display: -webkit-box;
   -webkit-line-clamp: 3;
+  line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }

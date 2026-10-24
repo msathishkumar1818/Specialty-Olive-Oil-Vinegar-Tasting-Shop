@@ -359,7 +359,7 @@
   /* Hide header utility buttons and header CTA on mobile.
      The CTA button is placed strictly INSIDE the mobile menu drawer */
   .header-actions .util-btn {
-    display: none;
+    display: none !important;
   }
 
   .header-actions .login-btn,
@@ -367,10 +367,11 @@
     display: none !important;
   }
 
-
   .menu-toggle-btn {
     width: 36px;
     height: 36px;
+    outline: none !important;
+    -webkit-tap-highlight-color: transparent !important;
   }
 
   .hero-heading {
