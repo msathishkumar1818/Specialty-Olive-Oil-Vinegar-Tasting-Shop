@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &amp; Tasting Room Concierge | Olive &amp; Cruet</title>
+  <meta name="description"
+    content="Contact our certified olive oil sommeliers. Visit our historic Florence tasting room, book guided cellar flights, or enquire about custom cask allocations.">
+  <link rel="icon" type="image/png" href="assets/images/icons/logo.png">
+
+  <!-- Core & Responsive Stylesheets (No Inline Styles) -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+
+  <!-- ======================================================================
+       BRANDED PAGE LOADER
+       ====================================================================== -->
+  <div id="page-loader" aria-hidden="true">
+    <div class="loader-emblem">
+      <div class="loader-emblem-inner">
+        <img src="assets/images/icons/logo.png" alt="Olive &amp; Cruet Crest">
+      </div>
+    </div>
+    <div class="loader-text">Olive &amp; Cruet</div>
+    <div class="loader-progress-bar">
+      <div class="loader-progress-fill"></div>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       FIXED COMPACT HEADER (Single-Line Desktop, Never Scrolls Away)
+       ====================================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="container-custom header-inner">
+
+      <!-- Brand Logo & Identity -->
+      <a href="index.html" class="brand-link" aria-label="Olive and Cruet Home">
+        <div class="brand-crest">
+          <img src="assets/images/icons/logo.png" alt="Olive &amp; Cruet Artisans Logo">
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">Olive &amp; Cruet</span>
+          <span class="brand-subtitle">Specialty Tasting Shop</span>
+        </div>
+      </a>
+
+      <!-- Primary Desktop Navigation (Exactly 6 Nav Items) -->
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        <ul class="nav-menu">
+
+          <!-- 1. Home (Click-Only Dropdown) -->
+          <li class="nav-item">
+            <button type="button" class="nav-link" id="home-dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+              <span>Home</span>
+              <svg class="nav-chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+            <div class="home-dropdown" id="home-dropdown-menu" role="menu">
+              <a href="index.html" class="home-dropdown-item" role="menuitem">Home 1 — Tasting Bar</a>
+              <a href="home-2.html" class="home-dropdown-item" role="menuitem">Home 2 — Estate Reserve</a>
+            </div>
+          </li>
+
+          <!-- 2. Products -->
+          <li class="nav-item">
+            <a href="products.html" class="nav-link">Products</a>
+          </li>
+
+          <!-- 3. Tasting Events -->
+          <li class="nav-item">
+            <a href="events.html" class="nav-link">Tasting Events</a>
+          </li>
+
+          <!-- 4. Tasting Bar Experience -->
+          <li class="nav-item">
+            <a href="tasting-bar.html" class="nav-link">Tasting Bar</a>
+          </li>
+
+          <!-- 5. About Us -->
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About Us</a>
+          </li>
+
+          <!-- 6. Contact (Active) -->
+          <li class="nav-item active">
+            <a href="contact.html" class="nav-link active">Contact</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <!-- Action & Utility Controls Group -->
+      <div class="header-actions">
+
+        <!-- RTL / LTR Toggle -->
+        <button type="button" class="util-btn rtl-toggle" aria-label="Switch Direction" title="Toggle RTL/LTR">
+          <span class="rtl-text-indicator">RTL</span>
+        </button>
+
+        <!-- Dark Mode Toggle (#000000 Pitch Black) -->
+        <button type="button" class="util-btn theme-toggle" aria-label="Toggle dark mode"
+          title="Toggle Dark/Light Mode">
+          <svg class="dark-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="5" stroke-linecap="round" />
+            <path
+              d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72l1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"
+              stroke-linecap="round" />
+          </svg>
+          <svg class="light-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+
+        <!-- Book Tasting Header CTA Button -->
+        <a href="tasting-bar.html#reserve-stool" class="header-cta-btn">
+          <span>Book Tasting</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button type="button" class="menu-toggle-btn" id="menu-toggle" aria-label="Open mobile menu"
+          aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ======================================================================
+       MOBILE OFF-CANVAS DRAWER
+       ====================================================================== -->
+  <div class="mobile-backdrop" id="mobile-backdrop" aria-hidden="true"></div>
+  <aside class="mobile-drawer" id="mobile-drawer" aria-label="Mobile Navigation">
+
+    <div class="drawer-header">
+      <a href="index.html" class="drawer-brand">
+        <div class="drawer-brand-crest">
+          <img src="assets/images/icons/logo.png" alt="Olive &amp; Cruet Logo">
+        </div>
+        <div class="drawer-brand-text">
+          <span class="drawer-brand-title">Olive &amp; Cruet</span>
+          <span class="drawer-brand-sub">Specialty Tasting Shop</span>
+        </div>
+      </a>
+      <button type="button" class="drawer-close-btn" id="drawer-close" aria-label="Close menu">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M18 6L6 18M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+    </div>
+
+    <div class="drawer-controls">
+      <div class="drawer-ctrl-item">
+        <span>Dark Theme</span>
+        <button type="button" class="util-btn theme-toggle" aria-label="Toggle dark mode">
+          <svg class="dark-icon" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="5" />
+            <path
+              d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72l1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+          </svg>
+          <svg class="light-icon" viewBox="0 0 24 24">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="drawer-ctrl-item">
+        <span>RTL / LTR</span>
+        <button type="button" class="util-btn rtl-toggle" aria-label="Toggle direction">
+          <span class="rtl-text-indicator">RTL</span>
+        </button>
+      </div>
+    </div>
+
+    <nav class="drawer-nav">
+      <ul class="drawer-menu">
+        <li>
+          <button type="button" class="drawer-link drawer-accordion-btn" id="mobile-home-accordion"
+            aria-expanded="false">
+            <span>Home</span>
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+          <ul class="drawer-sublist" id="mobile-home-sub">
+            <li><a href="index.html" class="drawer-sublink">Home 1 — Tasting Bar</a></li>
+            <li><a href="home-2.html" class="drawer-sublink">Home 2 — Estate Reserve</a></li>
+          </ul>
+        </li>
+
+        <li><a href="products.html" class="drawer-link">Products</a></li>
+        <li><a href="events.html" class="drawer-link">Tasting Events</a></li>
+        <li><a href="tasting-bar.html" class="drawer-link">Tasting Bar</a></li>
+        <li><a href="about.html" class="drawer-link">About Us</a></li>
+        <li><a href="contact.html" class="drawer-link active">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="drawer-footer">
+      <a href="tasting-bar.html#reserve-stool" class="drawer-cta-btn">
+        <span>Book a Tasting Flight</span>
+      </a>
+    </div>
+
+  </aside>
+
+  <!-- ======================================================================
+       MAIN CONTENT: EXACTLY 5 MAIN CONTENT SECTIONS (INNER PAGE 05)
+       ====================================================================== -->
+  <main id="main-content">
+
+    <!-- --------------------------------------------------------------------
+         SECTION 1: CONCIERGE HERO & CELLAR ENTRANCE
+         -------------------------------------------------------------------- -->
+    <section class="contact-hero-section" id="contact-hero">
+      <div class="contact-hero-bg" aria-hidden="true"></div>
+
+      <div class="container-custom">
+        <div class="contact-hero-content">
+
+          <div class="contact-status-chip">
+            <span class="pulse"></span>
+            <span>Cellar Desk Active &bull; Walk-Ins Welcome</span>
+          </div>
+
+          <h1 class="contact-hero-heading">
+            Visit Our Cellar &amp; Tasting Room
+          </h1>
+          <p class="contact-hero-lead">
+            Coordinate private tastings, inquire about cask allocations, or reserve tasting stools.
+          </p>
+
+          <div class="contact-hero-actions">
+            <a href="#enquiry-form" class="btn-primary">
+              <span>Send Enquiry</span>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2"
+                aria-hidden="true">
+                <path d="M5 12h14M12 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+            <a href="#live-map-location" class="btn-secondary">
+              <span>Google Live Map</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         SECTION 2: 4 SYMMETRICAL VISIT & CONCIERGE CARDS (Equal Height)
+         -------------------------------------------------------------------- -->
+    <section class="visit-info-section section-padding" id="visit-info">
+      <div class="container-custom">
+
+        <div class="section-title-wrap">
+          <span class="section-eyebrow">Location &amp; Access</span>
+          <h2 class="section-heading">Four Direct Concierge Desks</h2>
+          <p class="section-lead">
+            Walk-in bar sips, reserve pickups, and private masterclass coordination.
+          </p>
+        </div>
+
+        <div class="visit-grid-4">
+
+          <!-- Card 1: Tasting Counter Bar -->
+          <article class="visit-card">
+            <div class="visit-media-wrap">
+              <img src="assets/images/sections/p47.jpg" alt="Olive and Cruet walk-in tasting counter ambiance">
+              <span class="visit-badge-corner">Walk-In</span>
+            </div>
+            <div class="visit-card-body">
+              <span class="visit-sub">Daily Tasting Bar</span>
+              <h3 class="visit-title">Walk-In Tasting Bar</h3>
+              <p class="visit-desc">
+                Four guided flights poured fresh from nitrogen-sealed stainless steel fusti canisters.
+              </p>
+              <div class="visit-card-footer">
+                <span class="visit-tag">Tue &ndash; Sun: 10am &ndash; 7pm</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Sommelier Private Consult -->
+          <article class="visit-card">
+            <div class="visit-media-wrap">
+              <img src="assets/images/sections/p48.jpg" alt="Certified Olive Oil Sommelier consultation desk">
+              <span class="visit-badge-corner">Sommelier</span>
+            </div>
+            <div class="visit-card-body">
+              <span class="visit-sub">Direct Consultation</span>
+              <h3 class="visit-title">Sommelier Consult Desk</h3>
+              <p class="visit-desc">
+                One-on-one sensory olive oil evaluation, polyphenol lab review, and pairing flight design.
+              </p>
+              <div class="visit-card-footer">
+                <span class="visit-tag">By Reservation &bull; Desk #2</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Direct Phone & Cellar Floor -->
+          <article class="visit-card">
+            <div class="visit-media-wrap">
+              <img src="assets/images/sections/p49.jpg" alt="Florence Cellar Tasting Room Floor" loading="lazy">
+              <span class="visit-badge-corner">Cellar Phone</span>
+            </div>
+            <div class="visit-card-body">
+              <span class="visit-sub">Direct Phone Floor</span>
+              <h3 class="visit-title">Cellar Hotline</h3>
+              <p class="visit-desc">
+                Direct phone line to our Florence tasting room floor for harvest release inquiries.
+              </p>
+              <div class="visit-card-footer">
+                <span class="visit-tag">+39 055 289 4410</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4: Postal & Shipping Dispatch -->
+          <article class="visit-card">
+            <div class="visit-media-wrap">
+              <img src="assets/images/sections/p50.jpg" alt="Global Dispatch and Bespoke Flight Packaging"
+                loading="lazy">
+              <span class="visit-badge-corner">Worldwide</span>
+            </div>
+            <div class="visit-card-body">
+              <span class="visit-sub">Direct Email Desk</span>
+              <h3 class="visit-title">Global Dispatch</h3>
+              <p class="visit-desc">
+                Worldwide cold-chain shipments, bespoke gift flights, and private event buyouts.
+              </p>
+              <div class="visit-card-footer">
+                <span class="visit-tag">cellar@oliveandcruet.com</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         SECTION 3: SOMMELIER TASTING ENQUIRY & CONSULTATION FORM
+         -------------------------------------------------------------------- -->
+    <section class="enquiry-section section-padding" id="enquiry-form">
+      <div class="container-custom">
+
+        <div class="section-title-wrap">
+          <span class="section-eyebrow">Personalized Service</span>
+          <h2 class="section-heading">Tasting Enquiry &amp; Sommelier Consultation</h2>
+          <p class="section-lead">
+            Our sommelier desk reviews and confirms each request within 2 business hours.
+          </p>
+        </div>
+
+        <div class="enquiry-split-grid">
+
+          <!-- Left: Main Interactive Form -->
+          <div class="enquiry-form-card">
+            <form
+              onsubmit="event.preventDefault(); alert('Tasting Enquiry Received! Our Head Sommelier will contact you within 2 hours.');">
+              <div class="form-row-2">
+                <div class="form-field-group">
+                  <label class="form-field-label" for="contact-name">Full Name *</label>
+                  <input type="text" id="contact-name" class="form-field-input" placeholder="e.g. Alessandro Rossi"
+                    required>
+                </div>
+                <div class="form-field-group">
+                  <label class="form-field-label" for="contact-email">Email Address *</label>
+                  <input type="email" id="contact-email" class="form-field-input" placeholder="alessandro@sommelier.it"
+                    required>
+                </div>
+              </div>
+
+              <div class="form-row-2">
+                <div class="form-field-group">
+                  <label class="form-field-label" for="contact-phone">Phone Number *</label>
+                  <input type="tel" id="contact-phone" class="form-field-input" placeholder="+39 055 123 4567" required>
+                </div>
+                <div class="form-field-group">
+                  <label class="form-field-label" for="contact-experience">Desired Experience *</label>
+                  <select id="contact-experience" class="form-field-select" required>
+                    <option value="bar-flight" selected>Guided Tasting Flight (Tasting Bar)</option>
+                    <option value="masterclass">Evening Masterclass &amp; Sensory Workshop</option>
+                    <option value="chef-table">Private Cellar 5-Course Chef Pairing</option>
+                    <option value="cask-society">Private Solera Cask Allocation Society</option>
+                    <option value="custom-corporate">Corporate &amp; Wedding Gift Flights</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-row-2">
+                <div class="form-field-group">
+                  <label class="form-field-label" for="contact-guests">Number of Guests</label>
+                  <select id="contact-guests" class="form-field-select" required>
+                    <option value="1">1 Connoisseur (Solo Tasting)</option>
+                    <option value="2" selected>2 Guests (Tasting for Two)</option>
+                    <option value="4">3 &ndash; 6 Guests (Private Table)</option>
+                    <option value="12">7 &ndash; 16 Guests (Full Cellar Room)</option>
+                  </select>
+                </div>
+                <div class="form-field-group">
+                  <label class="form-field-label" for="contact-date">Preferred Date &amp; Time Slot</label>
+                  <input type="text" id="contact-date" class="form-field-input" placeholder="e.g. Friday at 5:00 PM"
+                    required>
+                </div>
+              </div>
+
+              <div class="form-field-group">
+                <label class="form-field-label" for="contact-message">Sensory Notes, Allergies, or Special
+                  Requests</label>
+                <textarea id="contact-message" class="form-field-textarea" rows="4"
+                  placeholder="Let us know your favorite varietals (e.g. Coratina, Picual, Aged Modena) or dietary preferences..."></textarea>
+              </div>
+
+              <button type="submit" class="form-submit-btn">
+                <span>Submit Tasting Enquiry</span>
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2"
+                  aria-hidden="true">
+                  <path d="M5 12h14M12 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </form>
+          </div>
+
+          <!-- Right: Concierge Commitment Sidebar -->
+          <div class="enquiry-concierge-sidebar">
+            <div class="concierge-box">
+              <span class="concierge-badge">Cellar Protocol</span>
+              <h3 class="concierge-title">Tasting Room Etiquette</h3>
+              <p class="concierge-desc">
+                To preserve delicate bouquets for all patrons, our tasting room follows official IOC sensory standards:
+              </p>
+
+              <ul class="concierge-checklist">
+                <li class="concierge-check-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                  <span><strong>Fragrance-Free:</strong> Refrain from wearing strong colognes before tasting.</span>
+                </li>
+                <li class="concierge-check-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                  <span><strong>Palate Cleansers:</strong> Crisp green apples and bread provided between flights.</span>
+                </li>
+                <li class="concierge-check-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                  <span><strong>Policy:</strong> Service animals welcome; flights recommended for ages 12+.</span>
+                </li>
+              </ul>
+
+              <div class="concierge-duty-chip">
+                <div class="duty-dot"></div>
+                <div>
+                  <strong style="color: var(--text-primary); font-size: 0.82rem; display: block;">Head Sommelier on
+                    Duty:</strong>
+                  <span style="color: var(--gold-accent); font-size: 0.78rem;">Marco Bellini &bull; IOC Panel
+                    Leader</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         SECTION 4: INTERACTIVE GOOGLE LIVE MAP & ACCESS GUIDE
+         -------------------------------------------------------------------- -->
+    <section class="live-map-section section-padding" id="live-map-location">
+      <div class="container-custom">
+
+        <div class="section-title-wrap">
+          <span class="section-eyebrow">Find The Cellar</span>
+          <h2 class="section-heading">Interactive Location &amp; Directions</h2>
+          <p class="section-lead">
+            Located in Florence, steps away from Piazza della Signoria and the Uffizi Gallery.
+          </p>
+        </div>
+
+        <div class="map-container-frame">
+          <!-- Real Interactive Embedded Google Map -->
+          <iframe class="map-iframe" title="Olive and Cruet Specialty Tasting Room Location in Florence"
+            src="https://maps.google.com/maps?q=Piazza+della+Signoria,+Florence,+Italy&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            aria-label="Google Map showing Olive and Cruet Florence location">
+          </iframe>
+          <div class="map-floating-overlay">
+            <div class="map-overlay-title">Olive &amp; Cruet Boutique</div>
+            <div class="map-overlay-sub">Via dei Georgofili, 14, 50122 Firenze FI, Italy</div>
+            <a href="https://maps.google.com/?q=Piazza+della+Signoria,+Florence,+Italy" target="_blank"
+              rel="noopener noreferrer" class="map-external-link">
+              <span>Open in Google Maps</span>
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"
+                aria-hidden="true">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="map-directions-grid">
+
+          <div class="direction-card">
+            <div class="direction-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 14 14" />
+              </svg>
+            </div>
+            <h3 class="direction-title">On Foot</h3>
+            <p class="direction-desc">
+              3-minute scenic stroll from Ponte Vecchio along the Arno riverbank.
+            </p>
+          </div>
+
+          <div class="direction-card">
+            <div class="direction-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <rect x="1" y="3" width="15" height="13" />
+                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8" />
+                <circle cx="5.5" cy="18.5" r="2.5" />
+                <circle cx="18.5" cy="18.5" r="2.5" />
+              </svg>
+            </div>
+            <h3 class="direction-title">Valet &amp; Parking</h3>
+            <p class="direction-desc">
+              Subterranean parking at Garage Ponte Vecchio with complimentary validation.
+            </p>
+          </div>
+
+          <div class="direction-card">
+            <div class="direction-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <circle cx="12" cy="12" r="10" />
+                <line x1="2" y1="12" x2="22" y2="12" />
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+              </svg>
+            </div>
+            <h3 class="direction-title">Taxi &amp; Chauffeur</h3>
+            <p class="direction-desc">
+              Direct taxi drop-off at Piazza del Limbo gate with elevator down to the cellar.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         SECTION 5: PRIVATE CELLAR ALLOCATION GUILD (Mandatory Final CTA)
+         -------------------------------------------------------------------- -->
+    <section class="contact-society-cta-section" id="contact-cta">
+      <div class="contact-society-bg" aria-hidden="true"></div>
+
+      <div class="container-custom">
+        <div class="cask-cta-container">
+
+          <span class="cask-cta-badge">Connoisseur Society</span>
+          <h2 class="cask-cta-title">Join the Private Cellar Allocation Guild</h2>
+          <p class="cask-cta-lead">
+            Direct grove press alerts, rare 50-year aged balsamic releases, and invitations to masterclasses.
+          </p>
+
+          <div class="cask-cta-box">
+            <form class="society-subscribe-form"
+              onsubmit="event.preventDefault(); alert('Welcome to the Private Cellar Guild! Confirmation dispatched to your inbox.');">
+              <div class="society-form-row">
+                <input type="email" class="society-email-input" placeholder="Enter your connoisseur email address"
+                  required aria-label="Email Address">
+                <button type="submit" class="society-submit-btn">
+                  <span>Request Membership</span>
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2"
+                    aria-hidden="true">
+                    <path d="M5 12h14M12 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </button>
+              </div>
+            </form>
+
+            <p class="cta-guarantee-note">
+              Strict privacy guaranteed &bull; Zero spam &bull; First rights to annual pressings
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================================================================
+       SHARED FOOTER
+       ====================================================================== -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="container-custom footer-grid">
+
+        <!-- Brand Story -->
+        <div class="footer-brand">
+          <a href="index.html" class="footer-brand-logo">
+            <div class="footer-crest">
+              <img src="assets/images/icons/logo.png" alt="Olive &amp; Cruet Artisans">
+            </div>
+            <div>
+              <div class="footer-brand-title">Olive &amp; Cruet</div>
+              <div class="footer-brand-sub">Artisan Tasting Room</div>
+            </div>
+          </a>
+          <p class="footer-desc">
+            Curating rare cold-pressed extra virgin olive oils and traditionally aged Modena balsamics directly from
+            generational Mediterranean groves.
+          </p>
+          <div class="footer-badge">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <span>Certified PDO &amp; PGI Harvest Direct</span>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="footer-col-title">Artisan Selection</h4>
+          <ul class="footer-links">
+            <li><a href="products.html">Single-Estate Olive Oils</a></li>
+            <li><a href="products.html">Aged Balsamic Vinegars</a></li>
+            <li><a href="products.html">Infused &amp; Citrus Reserves</a></li>
+            <li><a href="products.html">Artisan Cruets &amp; Dishes</a></li>
+            <li><a href="products.html">Curated Gift Collections</a></li>
+          </ul>
+        </div>
+
+        <!-- Tasting Bar & Hours -->
+        <div>
+          <h4 class="footer-col-title">Tasting Bar</h4>
+          <ul class="footer-links">
+            <li><a href="tasting-bar.html">Guided Tasting Flights</a></li>
+            <li><a href="events.html">Private Evening Masterclasses</a></li>
+            <li><a href="about.html">Olive Harvest Calendar</a></li>
+            <li><a href="contact.html">Sommelier Consultations</a></li>
+            <li><a href="contact.html">Visit our Cellar &amp; Bar</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter & Hours -->
+        <div class="footer-newsletter">
+          <h4 class="footer-col-title">Harvest Journal</h4>
+          <p>Receive exclusive invitations to fresh press arrivals and seasonal balsamic releases.</p>
+          <form class="newsletter-form"
+            onsubmit="event.preventDefault(); alert('Thank you for subscribing to our Harvest Journal!');">
+            <input type="email" class="newsletter-input" placeholder="Your email address" required
+              aria-label="Email Address">
+            <button type="submit" class="newsletter-btn">Subscribe</button>
+          </form>
+          <p style="margin-top: 1rem; font-size: 0.8rem; color: #CBC5B8;">
+            Tasting Room: Tue – Sun: 10:00 AM – 7:00 PM
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+      <div class="container-custom footer-bottom-inner">
+        <p class="footer-copy">
+          &copy; 2026 Olive &amp; Cruet Specialty Tasting Shop. All Rights Reserved.
+        </p>
+        <p class="footer-copy">
+          Crafted for Mediterranean Olive Oil &amp; Balsamic Connoisseurs.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======================================================================
+       SCROLL TO TOP FLOATING BUTTON
+       ====================================================================== -->
+  <button type="button" id="scroll-top" aria-label="Scroll back to top">
+    <svg viewBox="0 0 24 24" fill="none">
+      <path d="M18 15l-6-6-6 6" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  </button>
+
+  <!-- ======================================================================
+       LOGIN & REGISTRATION MODAL
+       ====================================================================== -->
+  <div class="modal-overlay" id="login-modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <button type="button" class="modal-close-btn" id="modal-close-btn" aria-label="Close dialog">
+        <svg viewBox="0 0 24 24" fill="none" width="18" height="18" stroke="currentColor" stroke-width="2.2">
+          <path d="M18 6L6 18M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+
+      <div class="modal-header">
+        <div class="modal-logo">
+          <img src="assets/images/icons/logo.png" alt="Olive &amp; Cruet Logo">
+        </div>
+        <h3 class="modal-title">Connoisseur Club</h3>
+        <p class="modal-subtitle">Sign in to book private tastings and access member reserves</p>
+      </div>
+
+      <form class="modal-form">
+        <div class="form-group">
+          <label class="form-label" for="login-email">Email Address</label>
+          <input type="email" id="login-email" class="form-input" placeholder="connoisseur@oliveandcruet.com" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="login-password">Password</label>
+          <input type="password" id="login-password" class="form-input" placeholder="••••••••" required>
+        </div>
+        <button type="submit" class="modal-submit-btn">Sign In to Account</button>
+      </form>
+
+      <div class="modal-switch">
+        Don't have an account? <a href="#"
+          onclick="event.preventDefault(); alert('Registration portal opened. You can now create your member profile.');">Register
+          here</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Shared Javascript (No inline scripts) -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tasting Events &amp; Masterclasses | Olive &amp; Cruet</title>
+  <meta name="description"
+    content="Join guided olive oil sommelier sensory masterclasses, cellar dinners, and private balsamic cask pairings at Olive &amp; Cruet.">
+  <link rel="icon" type="image/png" href="assets/images/icons/logo.png">
+
+  <!-- Core & Responsive Stylesheets (No Inline Styles) -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+
+  <!-- ======================================================================
+       BRANDED PAGE LOADER
+       ====================================================================== -->
+  <div id="page-loader" aria-hidden="true">
+    <div class="loader-emblem">
+      <div class="loader-emblem-inner">
+        <img src="assets/images/icons/logo.png" alt="Olive &amp; Cruet Crest">
+      </div>
+    </div>
+    <div class="loader-text">Olive &amp; Cruet</div>
+    <div class="loader-progress-bar">
+      <div class="loader-progress-fill"></div>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       FIXED COMPACT HEADER (Single-Line Desktop, Never Scrolls Away)
+       ====================================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="container-custom header-inner">
+
+      <!-- Brand Logo & Identity -->
+      <a href="index.html" class="brand-link" aria-label="Olive and Cruet Home">
+        <div class="brand-crest">
+          <img src="assets/images/icons/logo.png" alt="Olive &amp; Cruet Artisans Logo">
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">Olive &amp; Cruet</span>
+          <span class="brand-subtitle">Specialty Tasting Shop</span>
+        </div>
+      </a>
+
+      <!-- Primary Desktop Navigation (Exactly 6 Nav Items) -->
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        <ul class="nav-menu">
+
+          <!-- 1. Home (Click-Only Dropdown) -->
+          <li class="nav-item">
+            <button type="button" class="nav-link" id="home-dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+              <span>Home</span>
+              <svg class="nav-chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+            <div class="home-dropdown" id="home-dropdown-menu" role="menu">
+              <a href="index.html" class="home-dropdown-item" role="menuitem">Home 1 — Tasting Bar</a>
+              <a href="home-2.html" class="home-dropdown-item" role="menuitem">Home 2 — Estate Reserve</a>
+            </div>
+          </li>
+
+          <!-- 2. Products -->
+          <li class="nav-item">
+            <a href="products.html" class="nav-link">Products</a>
+          </li>
+
+          <!-- 3. Tasting Events (Active) -->
+          <li class="nav-item active">
+            <a href="events.html" class="nav-link active">Tasting Events</a>
+          </li>
+
+          <!-- 4. Tasting Bar Experience -->
+          <li class="nav-item">
+            <a href="tasting-bar.html" class="nav-link">Tasting Bar</a>
+          </li>
+
+          <!-- 5. About Us -->
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About Us</a>
+          </li>
+
+          <!-- 6. Contact -->
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <!-- Action & Utility Controls Group -->
+      <div class="header-actions">
+
+        <!-- RTL / LTR Toggle -->
+        <button type="button" class="util-btn rtl-toggle" aria-label="Switch Direction" title="Toggle RTL/LTR">
+          <span class="rtl-text-indicator">RTL</span>
+        </button>
+
+        <!-- Dark Mode Toggle (#000000 Pitch Black) -->
+        <button type="button" class="util-btn theme-toggle" aria-label="Toggle dark mode"
+          title="Toggle Dark/Light Mode">
+          <svg class="dark-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="5" stroke-linecap="round" />
+            <path
+              d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72l1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"
+              stroke-linecap="round" />
+          </svg>
+          <svg class="light-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+
+        <!-- Book Tasting Header CTA Button -->
+        <a href="tasting-bar.html#reserve-stool" class="header-cta-btn">
+          <span>Book Tasting</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button type="button" class="menu-toggle-btn" id="menu-toggle" aria-label="Open mobile menu"
+          aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ======================================================================
+       MOBILE OFF-CANVAS DRAWER
+       ====================================================================== -->
+  <div class="mobile-backdrop" id="mobile-backdrop" aria-hidden="true"></div>
+  <aside class="mobile-drawer" id="mobile-drawer" aria-label="Mobile Navigation">
+
+    <div class="drawer-header">
+      <a href="index.html" class="drawer-brand">
+        <div class="drawer-brand-crest">
+          <img src="assets/images/icons/logo.png" alt="Olive &amp; Cruet Logo">
+        </div>
+        <div class="drawer-brand-text">
+          <span class="drawer-brand-title">Olive &amp; Cruet</span>
+          <span class="drawer-brand-sub">Specialty Tasting Shop</span>
+        </div>
+      </a>
+      <button type="button" class="drawer-close-btn" id="drawer-close" aria-label="Close menu">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M18 6L6 18M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+    </div>
+
+    <div class="drawer-controls">
+      <div class="drawer-ctrl-item">
+        <span>Dark Theme</span>
+        <button type="button" class="util-btn theme-toggle" aria-label="Toggle dark mode">
+          <svg class="dark-icon" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="5" />
+            <path
+              d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72l1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+          </svg>
+          <svg class="light-icon" viewBox="0 0 24 24">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="drawer-ctrl-item">
+        <span>RTL / LTR</span>
+        <button type="button" class="util-btn rtl-toggle" aria-label="Toggle direction">
+          <span class="rtl-text-indicator">RTL</span>
+        </button>
+      </div>
+    </div>
+
+    <nav class="drawer-nav">
+      <ul class="drawer-menu">
+        <li>
+          <button type="button" class="drawer-link drawer-accordion-btn" id="mobile-home-accordion"
+            aria-expanded="false">
+            <span>Home</span>
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+          <ul class="drawer-sublist" id="mobile-home-sub">
+            <li><a href="index.html" class="drawer-sublink">Home 1 — Tasting Bar</a></li>
+            <li><a href="home-2.html" class="drawer-sublink">Home 2 — Estate Reserve</a></li>
+          </ul>
+        </li>
+
+        <li><a href="products.html" class="drawer-link">Products</a></li>
+        <li><a href="events.html" class="drawer-link active">Tasting Events</a></li>
+        <li><a href="tasting-bar.html" class="drawer-link">Tasting Bar</a></li>
+        <li><a href="about.html" class="drawer-link">About Us</a></li>
+        <li><a href="contact.html" class="drawer-link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="drawer-footer">
+      <a href="tasting-bar.html#reserve-stool" class="drawer-cta-btn">
+        <span>Book a Tasting Flight</span>
+      </a>
+    </div>
+
+  </aside>
+
+  <!-- ======================================================================
+       MAIN CONTENT: EXACTLY 5 MAIN CONTENT SECTIONS (INNER PAGE 02)
+       ====================================================================== -->
+  <main id="main-content">
+
+    <!-- --------------------------------------------------------------------
+         SECTION 1: EVENTS HERO & CALENDAR ANCHOR
+         -------------------------------------------------------------------- -->
+    <section class="events-hero-section" id="events-hero">
+      <div class="events-hero-bg" aria-hidden="true"></div>
+
+      <div class="container-custom events-hero-content">
+        <span class="section-eyebrow">Sommelier Sensory Workshops</span>
+        <h1 class="section-heading" style="margin-bottom: 0.75rem;">
+          Masterclasses, Cellar Dinners &amp; Pairings
+        </h1>
+        <p class="section-lead" style="margin: 0 auto;">
+          Palate training with master olive oil sommeliers and aceto balsamico cellar masters.
+        </p>
+
+        <div class="events-schedule-pill-group">
+          <div class="schedule-badge-chip">
+            <span style="color: var(--gold-accent);">&bull;</span>
+            <span>Intimate Classes (Max 12 Guests)</span>
+          </div>
+          <div class="schedule-badge-chip">
+            <span style="color: var(--gold-accent);">&bull;</span>
+            <span>Official Cobalt Glasses Included</span>
+          </div>
+          <div class="schedule-badge-chip">
+            <span style="color: var(--gold-accent);">&bull;</span>
+            <span>Weekly: Thursday &amp; Saturday</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         SECTION 2: UPCOMING MASTERCLASS LINEUP (3 Event Date Cards)
+         -------------------------------------------------------------------- -->
+    <section class="events-lineup-section section-padding" id="masterclasses">
+      <div class="container-custom">
+
+        <div class="section-title-wrap">
+          <span class="section-eyebrow">Upcoming Schedule</span>
+          <h2 class="section-heading">Featured Tasting Masterclasses</h2>
+          <p class="section-lead">
+            Reserve your seat at our tasting counter. Flights of rare single-grove pressings included.
+          </p>
+        </div>
+
+        <div class="event-cards-grid">
+
+          <!-- Event 1: Sommelier Foundations -->
+          <article class="event-master-card">
+            <div class="event-card-bg-wrap">
+              <img src="assets/images/sections/event_sommelier_flight.jpg"
+                alt="Certified sommelier holding cobalt blue tasting glass at wooden bar" class="event-card-bg-img"
+                loading="lazy">
+              <div class="event-card-overlay-shade" aria-hidden="true"></div>
+            </div>
+
+            <div class="event-card-top-row">
+              <div class="event-date-pill">
+                <span class="event-date-month">OCT</span>
+                <span class="event-date-day">28</span>
+              </div>
+              <span class="event-seats-pill">4 Seats Left</span>
+            </div>
+
+            <div class="event-card-body">
+              <span class="event-instructor-tag">Led by Sommelier Matteo Rossi</span>
+              <h3 class="event-card-title">Sensory Foundations &amp; Terroir Flights</h3>
+              <div class="event-card-meta-row">
+                <span class="event-meta-time">
+                  <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 6v6l4 2"/>
+                  </svg>
+                  6:30 PM &bull; 90 Min
+                </span>
+              </div>
+              <div class="event-card-action-bar">
+                <span class="event-price-val">$65.00</span>
+                <a href="tasting-bar.html#reserve-stool" class="event-action-btn">Reserve</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Event 2: Modena Balsamic Battery Dinner -->
+          <article class="event-master-card">
+            <div class="event-card-bg-wrap">
+              <img src="assets/images/sections/event_solera_parmigiano.jpg"
+                alt="Traditional 25 year aged Modena balsamic drizzled on Parmigiano Reggiano" class="event-card-bg-img"
+                loading="lazy">
+              <div class="event-card-overlay-shade" aria-hidden="true"></div>
+            </div>
+
+            <div class="event-card-top-row">
+              <div class="event-date-pill">
+                <span class="event-date-month">NOV</span>
+                <span class="event-date-day">04</span>
+              </div>
+              <span class="event-seats-pill">2 Seats Left</span>
+            </div>
+
+            <div class="event-card-body">
+              <span class="event-instructor-tag">Led by Cellar Master Elena Conti</span>
+              <h3 class="event-card-title">Modena Solera &amp; Parmigiano Masterflight</h3>
+              <div class="event-card-meta-row">
+                <span class="event-meta-time">
+                  <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 6v6l4 2"/>
+                  </svg>
+                  7:00 PM &bull; 2 Hours
+                </span>
+              </div>
+              <div class="event-card-action-bar">
+                <span class="event-price-val">$85.00</span>
+                <a href="tasting-bar.html#reserve-stool" class="event-action-btn">Reserve</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Event 3: Early Harvest Fresh Press Festival -->
+          <article class="event-master-card">
+            <div class="event-card-bg-wrap">
+              <img src="assets/images/sections/event_olio_nuovo_harvest.jpg"
+                alt="Vibrant emerald green freshly pressed Olio Nuovo pouring on rustic bread" class="event-card-bg-img"
+                loading="lazy">
+              <div class="event-card-overlay-shade" aria-hidden="true"></div>
+            </div>
+
+            <div class="event-card-top-row">
+              <div class="event-date-pill">
+                <span class="event-date-month">NOV</span>
+                <span class="event-date-day">12</span>
+              </div>
+              <span class="event-seats-pill">6 Seats Left</span>
+            </div>
+
+            <div class="event-card-body">
+              <span class="event-instructor-tag">Annual Autumn Harvest Showcase</span>
+              <h3 class="event-card-title">Fresh Press Olio Nuovo Celebration</h3>
+              <div class="event-card-meta-row">
+                <span class="event-meta-time">
+                  <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 6v6l4 2"/>
+                  </svg>
+                  5:30 PM &bull; 2 Hours
+                </span>
+              </div>
+              <div class="event-card-action-bar">
+                <span class="event-price-val">$75.00</span>
+                <a href="tasting-bar.html#reserve-stool" class="event-action-btn">Reserve</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         SECTION 3: SENSORY MASTERCLASS PILLARS (4-Column Experience)
+         -------------------------------------------------------------------- -->
+    <section class="curriculum-section section-padding" id="sensory-pillars">
+      <div class="container-custom">
+
+        <div style="text-align: center; max-width: 720px; margin: 0 auto 1.5rem;">
+          <span class="section-eyebrow">Class Curriculum</span>
+          <h2 class="section-heading">What You Will Master</h2>
+          <p class="section-lead" style="margin: 0 auto;">
+            Sensory analysis standards codified by the International Olive Council (IOC).
+          </p>
+        </div>
+
+        <div class="curriculum-grid-4">
+
+          <div class="pillar-card">
+            <div class="pillar-card-media">
+              <img src="assets/images/sections/curriculum_strippaggio.jpg"
+                alt="Sommelier performing strippaggio sensory aeration technique" class="pillar-card-img"
+                loading="lazy">
+              <div class="pillar-icon-box" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                </svg>
+              </div>
+            </div>
+            <div class="pillar-card-content">
+              <h3 class="pillar-title">Sensory Strippaggio</h3>
+              <p class="pillar-desc">
+                Master the aeration technique that isolates fruitiness, pleasant bitterness, and peppery pungency.
+              </p>
+            </div>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-card-media">
+              <img src="assets/images/sections/bar_cobalt_blue_glasses.jpg"
+                alt="IOC official cobalt blue tasting glasses for olive oil defect analysis" class="pillar-card-img"
+                loading="lazy">
+              <div class="pillar-icon-box" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M12 6v6l4 2" />
+                </svg>
+              </div>
+            </div>
+            <div class="pillar-card-content">
+              <h3 class="pillar-title">Defect Identification</h3>
+              <p class="pillar-desc">
+                Detect commercial flaws like rancidity, fustiness, and winey acidity in store oils.
+              </p>
+            </div>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-card-media">
+              <img src="assets/images/sections/pairing_burrata_evoo.jpg"
+                alt="Gourmet burrata with cold pressed extra virgin olive oil drizzle" class="pillar-card-img"
+                loading="lazy">
+              <div class="pillar-icon-box" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                </svg>
+              </div>
+            </div>
+            <div class="pillar-card-content">
+              <h3 class="pillar-title">Gastronomy Pairing</h3>
+              <p class="pillar-desc">
+                Understand how polyphenol density cuts animal fats and aged balsamics balance umami.
+              </p>
+            </div>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-card-media">
+              <img src="assets/images/sections/contact_sommelier_desk.jpg"
+                alt="Sommelier tasting desk with official evaluation notebook and log" class="pillar-card-img"
+                loading="lazy">
+              <div class="pillar-icon-box" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+                </svg>
+              </div>
+            </div>
+            <div class="pillar-card-content">
+              <h3 class="pillar-title">Sensory Passport</h3>
+              <p class="pillar-desc">
+                Receive an embossed tasting log notebook with IOC grids and sommelier certification seal.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         SECTION 4: PRIVATE CELLAR CHEF TABLE (Split Gastronomic)
+         -------------------------------------------------------------------- -->
+    <section class="chef-table-section section-padding" id="chef-table">
+      <div class="container-custom">
+        <div class="chef-table-split">
+
+          <div class="chef-table-photo-frame">
+            <img src="assets/images/sections/p24.jpg" alt="Chef preparing olive oil pairing dish at private counter">
+          </div>
+
+          <div>
+            <span class="section-eyebrow">Exclusive Culinary Experience</span>
+            <h2 class="section-heading">5-Course Olive Oil Pairing Dinner</h2>
+            <p class="section-lead">
+              Five courses in our barrel vault for up to 10 guests, paired with rare pressings.
+            </p>
+
+            <div class="chef-courses-list">
+
+              <div class="course-item">
+                <div class="course-num">01</div>
+                <div>
+                  <h3 class="course-dish-name">Crudo of Mediterranean Sea Bass</h3>
+                  <p class="course-pairing-note">
+                    Paired with Agrumato Lemon EVOO from Mount Etna, caper leaves, and sea salt.
+                  </p>
+                </div>
+              </div>
+
+              <div class="course-item">
+                <div class="course-num">02</div>
+                <div>
+                  <h3 class="course-dish-name">Warm Pugliese Burrata &amp; Roasted Figs</h3>
+                  <p class="course-pairing-note">
+                    Paired with Andalusian Picual and 18-Year Wild Cherrywood Modena Balsamic.
+                  </p>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         SECTION 5: PRIVATE CELLAR EVENT BOOKING (Mandatory CTA)
+         -------------------------------------------------------------------- -->
+    <section class="private-event-cta-section" id="private-booking">
+      <div class="private-event-bg" aria-hidden="true"></div>
+
+      <div class="container-custom">
+        <div class="cask-cta-container">
+
+          <span class="cask-cta-badge">Bespoke Gatherings</span>
+          <h2 class="cask-cta-title">Book a Private Cellar Masterclass or Corporate Event</h2>
+          <p class="cask-cta-lead">
+            Host private client dinners, birthdays, or team sensory retreats in our cellar vault.
+          </p>
+
+          <div class="cask-cta-box">
+            <form
+              onsubmit="event.preventDefault(); alert('Private Event Enquiry Received! Our Event Director will reach out within 24 hours with custom menu proposals.');">
+              <div class="booking-form-grid">
+
+                <div class="booking-field-group">
+                  <label class="booking-label" for="event-type">Event Experience</label>
+                  <select id="event-type" class="booking-select" required>
+                    <option value="private-class" selected>Private Sommelier Masterclass (8–14 Guests)</option>
+                    <option value="chef-dinner">5-Course Cellar Pairing Dinner (6–10 Guests)</option>
+                    <option value="corporate">Corporate Team Tasting Reception (15–30 Guests)</option>
+                  </select>
+                </div>
+
+                <div class="booking-field-group">
+                  <label class="booking-label" for="event-date">Preferred Date</label>
+                  <input type="text" id="event-date" class="booking-input" placeholder="e.g. November 18, 2026"
+                    required>
+                </div>
+
+                <div class="booking-field-group">
+                  <label class="booking-label" for="event-contact">Contact Email</label>
+                  <input type="email" id="event-contact" class="booking-input" placeholder="host@company.com" required>
+                </div>
+
+              </div>
+
+              <button type="submit" class="cta-reserve-btn">
+                Request Private Cellar Proposal
+              </button>
+            </form>
+
+            <p class="cta-guarantee-note">
+              Customized menus, sommelier flight booklets, and dedicated cellar staff included.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================================================================
+       SHARED FOOTER
+       ====================================================================== -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="container-custom footer-grid">
+
+        <!-- Brand Story -->
+        <div class="footer-brand">
+          <a href="index.html" class="footer-brand-logo">
+            <div class="footer-crest">
+              <img src="assets/images/icons/logo.png" alt="Olive &amp; Cruet Artisans">
+            </div>
+            <div>
+              <div class="footer-brand-title">Olive &amp; Cruet</div>
+              <div class="footer-brand-sub">Artisan Tasting Room</div>
+            </div>
+          </a>
+          <p class="footer-desc">
+            Curating rare cold-pressed extra virgin olive oils and traditionally aged Modena balsamics directly from
+            generational Mediterranean groves.
+          </p>
+          <div class="footer-badge">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <span>Certified PDO &amp; PGI Harvest Direct</span>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="footer-col-title">Artisan Selection</h4>
+          <ul class="footer-links">
+            <li><a href="products.html">Single-Estate Olive Oils</a></li>
+            <li><a href="products.html">Aged Balsamic Vinegars</a></li>
+            <li><a href="products.html">Infused &amp; Citrus Reserves</a></li>
+            <li><a href="products.html">Artisan Cruets &amp; Dishes</a></li>
+            <li><a href="products.html">Curated Gift Collections</a></li>
+          </ul>
+        </div>
+
+        <!-- Tasting Bar & Hours -->
+        <div>
+          <h4 class="footer-col-title">Tasting Bar</h4>
+          <ul class="footer-links">
+            <li><a href="tasting-bar.html">Guided Tasting Flights</a></li>
+            <li><a href="events.html">Private Evening Masterclasses</a></li>
+            <li><a href="about.html">Olive Harvest Calendar</a></li>
+            <li><a href="contact.html">Sommelier Consultations</a></li>
+            <li><a href="contact.html">Visit our Cellar &amp; Bar</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter & Hours -->
+        <div class="footer-newsletter">
+          <h4 class="footer-col-title">Harvest Journal</h4>
+          <p>Receive exclusive invitations to fresh press arrivals and seasonal balsamic releases.</p>
+          <form class="newsletter-form"
+            onsubmit="event.preventDefault(); alert('Thank you for subscribing to our Harvest Journal!');">
+            <input type="email" class="newsletter-input" placeholder="Your email address" required
+              aria-label="Email Address">
+            <button type="submit" class="newsletter-btn">Subscribe</button>
+          </form>
+          <p style="margin-top: 1rem; font-size: 0.8rem; color: #CBC5B8;">
+            Tasting Room: Tue – Sun: 10:00 AM – 7:00 PM
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+      <div class="container-custom footer-bottom-inner">
+        <p class="footer-copy">
+          &copy; 2026 Olive &amp; Cruet Specialty Tasting Shop. All Rights Reserved.
+        </p>
+        <p class="footer-copy">
+          Crafted for Mediterranean Olive Oil &amp; Balsamic Connoisseurs.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======================================================================
+       SCROLL TO TOP FLOATING BUTTON
+       ====================================================================== -->
+  <button type="button" id="scroll-top" aria-label="Scroll back to top">
+    <svg viewBox="0 0 24 24" fill="none">
+      <path d="M18 15l-6-6-6 6" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  </button>
+
+  <!-- ======================================================================
+       LOGIN & REGISTRATION MODAL
+       ====================================================================== -->
+  <div class="modal-overlay" id="login-modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <button type="button" class="modal-close-btn" id="modal-close-btn" aria-label="Close dialog">
+        <svg viewBox="0 0 24 24" fill="none" width="18" height="18" stroke="currentColor" stroke-width="2.2">
+          <path d="M18 6L6 18M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+
+      <div class="modal-header">
+        <div class="modal-logo">
+          <img src="assets/images/icons/logo.png" alt="Olive &amp; Cruet Logo">
+        </div>
+        <h3 class="modal-title">Connoisseur Club</h3>
+        <p class="modal-subtitle">Sign in to book private tastings and access member reserves</p>
+      </div>
+
+      <form class="modal-form">
+        <div class="form-group">
+          <label class="form-label" for="login-email">Email Address</label>
+          <input type="email" id="login-email" class="form-input" placeholder="connoisseur@oliveandcruet.com" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="login-password">Password</label>
+          <input type="password" id="login-password" class="form-input" placeholder="••••••••" required>
+        </div>
+        <button type="submit" class="modal-submit-btn">Sign In to Account</button>
+      </form>
+
+      <div class="modal-switch">
+        Don't have an account? <a href="#"
+          onclick="event.preventDefault(); alert('Registration portal opened. You can now create your member profile.');">Register
+          here</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Shared Javascript (No inline scripts) -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

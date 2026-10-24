@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Artisan Heritage &amp; Groves | Olive &amp; Cruet</title>
+  <meta name="description"
+    content="Discover the story behind Olive &amp; Cruet: generational Mediterranean olive farming families, strict sub-0.2% acidity standards, and centuries-old solera barrels.">
+  <link rel="icon" type="image/png" href="assets/images/icons/logo.png">
+
+  <!-- Core & Responsive Stylesheets (No Inline Styles) -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+
+  <!-- ======================================================================
+       BRANDED PAGE LOADER
+       ====================================================================== -->
+  <div id="page-loader" aria-hidden="true">
+    <div class="loader-emblem">
+      <div class="loader-emblem-inner">
+        <img src="assets/images/icons/logo.png" alt="Olive &amp; Cruet Crest">
+      </div>
+    </div>
+    <div class="loader-text">Olive &amp; Cruet</div>
+    <div class="loader-progress-bar">
+      <div class="loader-progress-fill"></div>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       FIXED COMPACT HEADER (Single-Line Desktop, Never Scrolls Away)
+       ====================================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="container-custom header-inner">
+
+      <!-- Brand Logo & Identity -->
+      <a href="index.html" class="brand-link" aria-label="Olive and Cruet Home">
+        <div class="brand-crest">
+          <img src="assets/images/icons/logo.png" alt="Olive &amp; Cruet Artisans Logo">
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">Olive &amp; Cruet</span>
+          <span class="brand-subtitle">Specialty Tasting Shop</span>
+        </div>
+      </a>
+
+      <!-- Primary Desktop Navigation (Exactly 6 Nav Items) -->
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        <ul class="nav-menu">
+
+          <!-- 1. Home (Click-Only Dropdown) -->
+          <li class="nav-item">
+            <button type="button" class="nav-link" id="home-dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+              <span>Home</span>
+              <svg class="nav-chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+            <div class="home-dropdown" id="home-dropdown-menu" role="menu">
+              <a href="index.html" class="home-dropdown-item" role="menuitem">Home 1 — Tasting Bar</a>
+              <a href="home-2.html" class="home-dropdown-item" role="menuitem">Home 2 — Estate Reserve</a>
+            </div>
+          </li>
+
+          <!-- 2. Products -->
+          <li class="nav-item">
+            <a href="products.html" class="nav-link">Products</a>
+          </li>
+
+          <!-- 3. Tasting Events -->
+          <li class="nav-item">
+            <a href="events.html" class="nav-link">Tasting Events</a>
+          </li>
+
+          <!-- 4. Tasting Bar Experience -->
+          <li class="nav-item">
+            <a href="tasting-bar.html" class="nav-link">Tasting Bar</a>
+          </li>
+
+          <!-- 5. About Us (Active) -->
+          <li class="nav-item active">
+            <a href="about.html" class="nav-link active">About Us</a>
+          </li>
+
+          <!-- 6. Contact -->
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <!-- Action & Utility Controls Group -->
+      <div class="header-actions">
+
+        <!-- RTL / LTR Toggle -->
+        <button type="button" class="util-btn rtl-toggle" aria-label="Switch Direction" title="Toggle RTL/LTR">
+          <span class="rtl-text-indicator">RTL</span>
+        </button>
+
+        <!-- Dark Mode Toggle (#000000 Pitch Black) -->
+        <button type="button" class="util-btn theme-toggle" aria-label="Toggle dark mode"
+          title="Toggle Dark/Light Mode">
+          <svg class="dark-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="5" stroke-linecap="round" />
+            <path
+              d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72l1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"
+              stroke-linecap="round" />
+          </svg>
+          <svg class="light-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+
+        <!-- Book Tasting Header CTA Button -->
+        <a href="tasting-bar.html#reserve-stool" class="header-cta-btn">
+          <span>Book Tasting</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button type="button" class="menu-toggle-btn" id="menu-toggle" aria-label="Open mobile menu"
+          aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ======================================================================
+       MOBILE OFF-CANVAS DRAWER
+       ====================================================================== -->
+  <div class="mobile-backdrop" id="mobile-backdrop" aria-hidden="true"></div>
+  <aside class="mobile-drawer" id="mobile-drawer" aria-label="Mobile Navigation">
+
+    <div class="drawer-header">
+      <a href="index.html" class="drawer-brand">
+        <div class="drawer-brand-crest">
+          <img src="assets/images/icons/logo.png" alt="Olive &amp; Cruet Logo">
+        </div>
+        <div class="drawer-brand-text">
+          <span class="drawer-brand-title">Olive &amp; Cruet</span>
+          <span class="drawer-brand-sub">Specialty Tasting Shop</span>
+        </div>
+      </a>
+      <button type="button" class="drawer-close-btn" id="drawer-close" aria-label="Close menu">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M18 6L6 18M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+    </div>
+
+    <div class="drawer-controls">
+      <div class="drawer-ctrl-item">
+        <span>Dark Theme</span>
+        <button type="button" class="util-btn theme-toggle" aria-label="Toggle dark mode">
+          <svg class="dark-icon" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="5" />
+            <path
+              d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72l1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+          </svg>
+          <svg class="light-icon" viewBox="0 0 24 24">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="drawer-ctrl-item">
+        <span>RTL / LTR</span>
+        <button type="button" class="util-btn rtl-toggle" aria-label="Toggle direction">
+          <span class="rtl-text-indicator">RTL</span>
+        </button>
+      </div>
+    </div>
+
+    <nav class="drawer-nav">
+      <ul class="drawer-menu">
+        <li>
+          <button type="button" class="drawer-link drawer-accordion-btn" id="mobile-home-accordion"
+            aria-expanded="false">
+            <span>Home</span>
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+          <ul class="drawer-sublist" id="mobile-home-sub">
+            <li><a href="index.html" class="drawer-sublink">Home 1 — Tasting Bar</a></li>
+            <li><a href="home-2.html" class="drawer-sublink">Home 2 — Estate Reserve</a></li>
+          </ul>
+        </li>
+
+        <li><a href="products.html" class="drawer-link">Products</a></li>
+        <li><a href="events.html" class="drawer-link">Tasting Events</a></li>
+        <li><a href="tasting-bar.html" class="drawer-link">Tasting Bar</a></li>
+        <li><a href="about.html" class="drawer-link active">About Us</a></li>
+        <li><a href="contact.html" class="drawer-link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="drawer-footer">
+      <a href="tasting-bar.html#reserve-stool" class="drawer-cta-btn">
+        <span>Book a Tasting Flight</span>
+      </a>
+    </div>
+
+  </aside>
+
+  <!-- ======================================================================
+       MAIN CONTENT: EXACTLY 5 MAIN CONTENT SECTIONS (INNER PAGE 03)
+       ====================================================================== -->
+  <main id="main-content">
+
+    <!-- --------------------------------------------------------------------
+         SECTION 1: HERITAGE HERO & FOUNDERS ARCHIVE STORY
+         -------------------------------------------------------------------- -->
+    <section class="about-hero-section" id="heritage-hero">
+      <div class="about-hero-bg" aria-hidden="true"></div>
+
+      <div class="container-custom">
+        <div class="about-hero-content">
+          <span class="about-founders-badge">Established 2012 &bull; Direct Mill Imports</span>
+          <h1 class="section-heading about-hero-heading">
+            Dedicated to Pure Terroir, <span style="font-style: italic;">From Ancient Roots to Artisanal Cruet.</span>
+          </h1>
+          <p class="section-lead about-hero-lead">
+            Authentic extra virgin olive oil and traditional balsamic vinegar, unblended and directly traceable.
+          </p>
+          <div class="about-hero-actions">
+            <a href="#quality-pillars" class="btn-primary">
+              <span>Our Standards</span>
+            </a>
+            <a href="#grove-families" class="btn-secondary">
+              <span>Meet Families</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         SECTION 2: THE THREE QUALITY PILLARS (Equal Height 3-Column)
+         -------------------------------------------------------------------- -->
+    <section class="quality-pillars-section section-padding" id="quality-pillars">
+      <div class="container-custom">
+
+        <div style="text-align: center; max-width: 720px; margin: 0 auto 1.5rem;">
+          <span class="section-eyebrow">Our Manifesto</span>
+          <h2 class="section-heading">The Three Inflexible Standards</h2>
+          <p class="section-lead" style="margin: 0 auto;">
+            Every batch imported passes rigorous dual laboratory chemistry and sensory panel testing.
+          </p>
+        </div>
+
+        <div class="pillars-grid-3">
+
+          <!-- Pillar 1 -->
+          <article class="quality-pillar-card">
+            <div class="pillar-card-media">
+              <img src="assets/images/about/p39.jpg" alt="Certified laboratory chromatography and acidity testing"
+                class="pillar-card-img" loading="lazy">
+              <div class="pillar-spec-disc">0.2%</div>
+            </div>
+            <div class="quality-pillar-body">
+              <h3 class="pillar-card-title">0.2% Free Oleic Acidity</h3>
+              <p class="pillar-card-desc">
+                Our single-estate oils never exceed 0.2% acidity, proving rapid pressing within hours of harvest.
+              </p>
+              <div class="pillar-standard-chip-wrap">
+                <span class="pillar-standard-chip">Chromatography </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Pillar 2 -->
+          <article class="quality-pillar-card">
+            <div class="pillar-card-media">
+              <img src="assets/images/sections/p40.jpg" alt="IOC sensory panel blind tasting in cobalt blue glasses"
+                class="pillar-card-img" loading="lazy">
+              <div class="pillar-spec-disc">0.0</div>
+            </div>
+            <div class="quality-pillar-body">
+              <h3 class="pillar-card-title">Zero Organoleptic Defects</h3>
+              <p class="pillar-card-desc">
+                Tasted blind by an accredited 8-member sensory panel to guarantee zero defects.
+              </p>
+              <div class="pillar-standard-chip-wrap">
+                <span class="pillar-standard-chip">IOC Panel Certified</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Pillar 3 -->
+          <article class="quality-pillar-card">
+            <div class="pillar-card-media">
+              <img src="assets/images/about/p41.jpg" alt="Ancient centenary grove single estate harvest"
+                class="pillar-card-img" loading="lazy">
+              <div class="pillar-spec-disc">100%</div>
+            </div>
+            <div class="quality-pillar-body">
+              <h3 class="pillar-card-title">Single-Estate Traceability</h3>
+              <p class="pillar-card-desc">
+                Unblended single-estate oils listing specific grove microclimates, harvest dates, and cultivars.
+              </p>
+              <div class="pillar-standard-chip-wrap">
+                <span class="pillar-standard-chip">PDO &amp; PGI Direct</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         SECTION 3: GENERATIONAL GROVE FAMILIES (3 Family Stories)
+         -------------------------------------------------------------------- -->
+    <section class="families-section section-padding" id="grove-families">
+      <div class="container-custom">
+
+        <div class="section-title-wrap">
+          <span class="section-eyebrow">Direct Artisan Partnerships</span>
+          <h2 class="section-heading">Generational Grove Keepers</h2>
+          <p class="section-lead">
+            Partnering exclusively with family-owned groves where harvesting is a generational art.
+          </p>
+        </div>
+
+        <div class="families-grid-3">
+
+          <!-- Family 1: Rossi in Sicily -->
+          <article class="family-story-card">
+            <div class="family-photo-wrap">
+              <img src="assets/images/about/p42.jpg" alt="Artisan olive grower in Sicilian grove">
+            </div>
+            <div class="family-body">
+              <span class="family-estate-tag">Valle Del Belice &bull; Sicily</span>
+              <h3 class="family-title">The Rossi Family (4th Gen)</h3>
+              <p class="family-desc">
+                Centenary Nocellara trees farmed with dawn canvas net harvests every October.
+              </p>
+            </div>
+          </article>
+
+          <!-- Family 2: Garcia in Jaén -->
+          <article class="family-story-card">
+            <div class="family-photo-wrap">
+              <img src="assets/images/about/p43.jpg" alt="Traditional stone mill architecture in Andalusia">
+            </div>
+            <div class="family-body">
+              <span class="family-estate-tag">Sierra De Cazorla &bull; Spain</span>
+              <h3 class="family-title">The Garcia Millers (5th Gen)</h3>
+              <p class="family-desc">
+                High-altitude mountain Picual pressed under strict solar nitrogen blankets.
+              </p>
+            </div>
+          </article>
+
+          <!-- Family 3: Conti in Modena -->
+          <article class="family-story-card">
+            <div class="family-photo-wrap">
+              <img src="assets/images/about/p44.jpg" alt="Historic Modena balsamic acetaia barrels and vineyard">
+            </div>
+            <div class="family-body">
+              <span class="family-estate-tag">Modena &bull; Emilia-Romagna</span>
+              <h3 class="family-title">The Conti Acetaia (Since 1886)</h3>
+              <p class="family-desc">
+                Custodians of 14 historic barrel batteries with annual winter decanting rituals.
+              </p>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         SECTION 4: SUSTAINABILITY & ANCIENT GROVE CONSERVATION
+         -------------------------------------------------------------------- -->
+    <section class="conservation-section section-padding" id="conservation">
+      <div class="container-custom">
+        <div class="conservation-split">
+
+          <div class="conservation-text-content">
+            <span class="section-eyebrow">Ecological Stewardship</span>
+            <h2 class="section-heading">Conserving Mediterranean Millenary Trees</h2>
+            <p class="section-lead">
+              Protecting dry-farmed heritage groves and rejecting industrial irrigation farming.
+            </p>
+
+            <div class="conservation-points-stack">
+
+              <div class="conservation-item">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg>
+                <div>
+                  <h3 class="conservation-point-title">100% Dry-Farmed Heritage Groves</h3>
+                  <p class="conservation-point-desc">
+                    Deep root systems tap natural water tables, requiring zero artificial irrigation.
+                  </p>
+                </div>
+              </div>
+
+              <div class="conservation-item">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M12 6v6l4 2" />
+                </svg>
+                <div>
+                  <h3 class="conservation-point-title">Zero Plastic UV-Shield Glass</h3>
+                  <p class="conservation-point-desc">
+                    Heavy UV-shielding dark amber bottles sealed with biodegradable organic wax.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="conservation-photo-frame">
+            <img src="assets/images/about/p45.jpg" alt="Centenary olive tree in Mediterranean landscape">
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         SECTION 5: SOMMELIER CONSULTATION INVITATION (Mandatory CTA)
+         -------------------------------------------------------------------- -->
+    <section class="consultation-cta-section" id="sommelier-consultation">
+      <div class="consultation-bg" aria-hidden="true"></div>
+
+      <div class="container-custom">
+        <div class="cask-cta-container">
+
+          <span class="cask-cta-badge">Visit Our Tasting Shop</span>
+          <h2 class="cask-cta-title">Meet Our Sommeliers at the Tasting Bar</h2>
+          <p class="cask-cta-lead">
+            Let our certified olive oil sommeliers guide your palate through single-estate harvests.
+          </p>
+
+          <div class="cask-cta-box">
+            <form
+              onsubmit="event.preventDefault(); alert('Sommelier Consultation Booking Received! Our Tasting Room will prepare your flight.');">
+              <div class="booking-form-grid">
+
+                <div class="booking-field-group">
+                  <label class="booking-label" for="consult-interest">Consultation Focus</label>
+                  <select id="consult-interest" class="booking-select" required>
+                    <option value="pairing" selected>Culinary Olive Oil &amp; Food Pairing</option>
+                    <option value="polyphenol">High-Polyphenol Health &amp; Longevity Oils</option>
+                    <option value="balsamic">Modena Solera Vintage Gift Selection</option>
+                  </select>
+                </div>
+
+                <div class="booking-field-group">
+                  <label class="booking-label" for="consult-date">Preferred Visit Day</label>
+                  <input type="text" id="consult-date" class="booking-input" placeholder="e.g. This Saturday at 3 PM"
+                    required>
+                </div>
+
+                <div class="booking-field-group">
+                  <label class="booking-label" for="consult-name">Your Name</label>
+                  <input type="text" id="consult-name" class="booking-input" placeholder="Connoisseur Name" required>
+                </div>
+
+              </div>
+
+              <button type="submit" class="cta-reserve-btn">
+                Reserve Complimentary Bar Consultation
+              </button>
+            </form>
+
+            <p class="cta-guarantee-note">
+              Walk-ins welcome daily. Online reservations guarantee 1-on-1 sommelier bar time.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================================================================
+       SHARED FOOTER
+       ====================================================================== -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="container-custom footer-grid">
+
+        <!-- Brand Story -->
+        <div class="footer-brand">
+          <a href="index.html" class="footer-brand-logo">
+            <div class="footer-crest">
+              <img src="assets/images/icons/logo.png" alt="Olive &amp; Cruet Artisans">
+            </div>
+            <div>
+              <div class="footer-brand-title">Olive &amp; Cruet</div>
+              <div class="footer-brand-sub">Artisan Tasting Room</div>
+            </div>
+          </a>
+          <p class="footer-desc">
+            Curating rare cold-pressed extra virgin olive oils and traditionally aged Modena balsamics directly from
+            generational Mediterranean groves.
+          </p>
+          <div class="footer-badge">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <span>Certified PDO &amp; PGI Harvest Direct</span>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="footer-col-title">Artisan Selection</h4>
+          <ul class="footer-links">
+            <li><a href="products.html">Single-Estate Olive Oils</a></li>
+            <li><a href="products.html">Aged Balsamic Vinegars</a></li>
+            <li><a href="products.html">Infused &amp; Citrus Reserves</a></li>
+            <li><a href="products.html">Artisan Cruets &amp; Dishes</a></li>
+            <li><a href="products.html">Curated Gift Collections</a></li>
+          </ul>
+        </div>
+
+        <!-- Tasting Bar & Hours -->
+        <div>
+          <h4 class="footer-col-title">Tasting Bar</h4>
+          <ul class="footer-links">
+            <li><a href="tasting-bar.html">Guided Tasting Flights</a></li>
+            <li><a href="events.html">Private Evening Masterclasses</a></li>
+            <li><a href="about.html">Olive Harvest Calendar</a></li>
+            <li><a href="contact.html">Sommelier Consultations</a></li>
+            <li><a href="contact.html">Visit our Cellar &amp; Bar</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter & Hours -->
+        <div class="footer-newsletter">
+          <h4 class="footer-col-title">Harvest Journal</h4>
+          <p>Receive exclusive invitations to fresh press arrivals and seasonal balsamic releases.</p>
+          <form class="newsletter-form"
+            onsubmit="event.preventDefault(); alert('Thank you for subscribing to our Harvest Journal!');">
+            <input type="email" class="newsletter-input" placeholder="Your email address" required
+              aria-label="Email Address">
+            <button type="submit" class="newsletter-btn">Subscribe</button>
+          </form>
+          <p style="margin-top: 1rem; font-size: 0.8rem; color: #CBC5B8;">
+            Tasting Room: Tue – Sun: 10:00 AM – 7:00 PM
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+      <div class="container-custom footer-bottom-inner">
+        <p class="footer-copy">
+          &copy; 2026 Olive &amp; Cruet Specialty Tasting Shop. All Rights Reserved.
+        </p>
+        <p class="footer-copy">
+          Crafted for Mediterranean Olive Oil &amp; Balsamic Connoisseurs.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======================================================================
+       SCROLL TO TOP FLOATING BUTTON
+       ====================================================================== -->
+  <button type="button" id="scroll-top" aria-label="Scroll back to top">
+    <svg viewBox="0 0 24 24" fill="none">
+      <path d="M18 15l-6-6-6 6" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  </button>
+
+  <!-- ======================================================================
+       LOGIN & REGISTRATION MODAL
+       ====================================================================== -->
+  <div class="modal-overlay" id="login-modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <button type="button" class="modal-close-btn" id="modal-close-btn" aria-label="Close dialog">
+        <svg viewBox="0 0 24 24" fill="none" width="18" height="18" stroke="currentColor" stroke-width="2.2">
+          <path d="M18 6L6 18M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+
+      <div class="modal-header">
+        <div class="modal-logo">
+          <img src="assets/images/icons/logo.png" alt="Olive &amp; Cruet Logo">
+        </div>
+        <h3 class="modal-title">Connoisseur Club</h3>
+        <p class="modal-subtitle">Sign in to book private tastings and access member reserves</p>
+      </div>
+
+      <form class="modal-form">
+        <div class="form-group">
+          <label class="form-label" for="login-email">Email Address</label>
+          <input type="email" id="login-email" class="form-input" placeholder="connoisseur@oliveandcruet.com" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="login-password">Password</label>
+          <input type="password" id="login-password" class="form-input" placeholder="••••••••" required>
+        </div>
+        <button type="submit" class="modal-submit-btn">Sign In to Account</button>
+      </form>
+
+      <div class="modal-switch">
+        Don't have an account? <a href="#"
+          onclick="event.preventDefault(); alert('Registration portal opened. You can now create your member profile.');">Register
+          here</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Shared Javascript (No inline scripts) -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

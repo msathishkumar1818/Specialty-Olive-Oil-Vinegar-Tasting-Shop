@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Olive &amp; Cruet | Specialty Olive Oil &amp; Vinegar Tasting Shop</title>
+  <meta name="description"
+    content="Immerse in the Mediterranean tasting bar experience. Taste single-estate cold-pressed extra virgin olive oils and traditionally aged Modena balsamics.">
+  <link rel="icon" type="image/png" href="assets/images/icons/logo.png">
+
+  <!-- Core & Responsive Stylesheets (No Inline Styles) -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+
+  <!-- ======================================================================
+       BRANDED PAGE LOADER
+       ====================================================================== -->
+  <div id="page-loader" aria-hidden="true">
+    <div class="loader-emblem">
+      <div class="loader-emblem-inner">
+        <img src="assets/images/icons/logo.png" alt="Olive &amp; Cruet Crest">
+      </div>
+    </div>
+    <div class="loader-text">Olive &amp; Cruet</div>
+    <div class="loader-progress-bar">
+      <div class="loader-progress-fill"></div>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       FIXED COMPACT HEADER (Single-Line Desktop, Never Scrolls Away)
+       ====================================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="container-custom header-inner">
+
+      <!-- Brand Logo & Identity -->
+      <a href="index.html" class="brand-link" aria-label="Olive and Cruet Home">
+        <div class="brand-crest">
+          <img src="assets/images/icons/logo.png" alt="Olive &amp; Cruet Artisans Logo">
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">Olive &amp; Cruet</span>
+          <span class="brand-subtitle">Specialty Tasting Shop</span>
+        </div>
+      </a>
+
+      <!-- Primary Desktop Navigation (Exactly 6 Nav Items) -->
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        <ul class="nav-menu">
+
+          <!-- 1. Home (Click-Only Dropdown) -->
+          <li class="nav-item">
+            <button type="button" class="nav-link active" id="home-dropdown-toggle" aria-haspopup="true"
+              aria-expanded="false">
+              <span>Home</span>
+              <svg class="nav-chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+            <div class="home-dropdown" id="home-dropdown-menu" role="menu">
+              <a href="index.html" class="home-dropdown-item active" role="menuitem">Home 1 — Tasting Bar</a>
+              <a href="home-2.html" class="home-dropdown-item" role="menuitem">Home 2 — Estate Reserve</a>
+            </div>
+          </li>
+
+          <!-- 2. Products -->
+          <li class="nav-item">
+            <a href="products.html" class="nav-link">Products</a>
+          </li>
+
+          <!-- 3. Tasting Events -->
+          <li class="nav-item">
+            <a href="events.html" class="nav-link">Tasting Events</a>
+          </li>
+
+          <!-- 4. Tasting Bar Experience -->
+          <li class="nav-item">
+            <a href="tasting-bar.html" class="nav-link">Tasting Bar</a>
+          </li>
+
+          <!-- 5. About Us -->
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About Us</a>
+          </li>
+
+          <!-- 6. Contact -->
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <!-- Action & Utility Controls Group -->
+      <div class="header-actions">
+
+        <!-- RTL / LTR Toggle -->
+        <button type="button" class="util-btn rtl-toggle" aria-label="Switch Direction" title="Toggle RTL/LTR">
+          <span class="rtl-text-indicator">RTL</span>
+        </button>
+
+        <!-- Dark Mode Toggle (#000000 Pitch Black) -->
+        <button type="button" class="util-btn theme-toggle" aria-label="Toggle dark mode"
+          title="Toggle Dark/Light Mode">
+          <svg class="dark-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="5" stroke-linecap="round" />
+            <path
+              d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72l1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"
+              stroke-linecap="round" />
+          </svg>
+          <svg class="light-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+
+        <!-- Header Action CTA Button -->
+        <a href="tasting-bar.html#reserve-stool" class="header-cta-btn" aria-label="Book a Tasting Flight">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+            <path d="M8 2v4M16 2v4M3 10h18M5 4h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"
+              stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <span>Book Tasting</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button type="button" class="menu-toggle-btn" id="menu-toggle" aria-label="Open mobile menu"
+          aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ======================================================================
+       MOBILE OFF-CANVAS DRAWER
+       ====================================================================== -->
+  <div class="mobile-backdrop" id="mobile-backdrop" aria-hidden="true"></div>
+  <aside class="mobile-drawer" id="mobile-drawer" aria-label="Mobile Navigation">
+
+    <!-- Drawer Header -->
+    <div class="drawer-header">
+      <a href="index.html" class="drawer-brand">
+        <div class="drawer-brand-crest">
+          <img src="assets/images/icons/logo.png" alt="Olive &amp; Cruet Logo">
+        </div>
+        <div class="drawer-brand-text">
+          <span class="drawer-brand-title">Olive &amp; Cruet</span>
+          <span class="drawer-brand-sub">Specialty Tasting Shop</span>
+        </div>
+      </a>
+      <button type="button" class="drawer-close-btn" id="drawer-close" aria-label="Close menu">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M18 6L6 18M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Drawer Controls Row (Dark Mode & RTL) -->
+    <div class="drawer-controls">
+      <div class="drawer-ctrl-item">
+        <span>Dark Theme</span>
+        <button type="button" class="util-btn theme-toggle" aria-label="Toggle dark mode">
+          <svg class="dark-icon" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="5" />
+            <path
+              d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72l1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+          </svg>
+          <svg class="light-icon" viewBox="0 0 24 24">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="drawer-ctrl-item">
+        <span>RTL / LTR</span>
+        <button type="button" class="util-btn rtl-toggle" aria-label="Toggle direction">
+          <span class="rtl-text-indicator">RTL</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Navigation Links -->
+    <nav class="drawer-nav">
+      <ul class="drawer-menu">
+
+        <!-- Mobile Home Item with Accordion (Click only) -->
+        <li>
+          <button type="button" class="drawer-link drawer-accordion-btn active" id="mobile-home-accordion"
+            aria-expanded="false">
+            <span>Home</span>
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+          <ul class="drawer-sublist" id="mobile-home-sub">
+            <li><a href="index.html" class="drawer-sublink active">Home 1 — Tasting Bar</a></li>
+            <li><a href="home-2.html" class="drawer-sublink">Home 2 — Estate Reserve</a></li>
+          </ul>
+        </li>
+
+        <li><a href="products.html" class="drawer-link">Products</a></li>
+        <li><a href="events.html" class="drawer-link">Tasting Events</a></li>
+        <li><a href="tasting-bar.html" class="drawer-link">Tasting Bar</a></li>
+        <li><a href="about.html" class="drawer-link">About Us</a></li>
+        <li><a href="contact.html" class="drawer-link">Contact</a></li>
+
+      </ul>
+    </nav>
+
+    <!-- Mobile Drawer Footer with CTA Button -->
+    <div class="drawer-footer">
+      <a href="tasting-bar.html#reserve-stool" class="drawer-cta-btn">
+        <svg viewBox="0 0 24 24" fill="none" width="18" height="18" stroke="currentColor" stroke-width="2"
+          aria-hidden="true">
+          <path d="M8 2v4M16 2v4M3 10h18M5 4h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z" />
+        </svg>
+        <span>Book a Tasting Flight</span>
+      </a>
+    </div>
+
+  </aside>
+
+
+  <!-- ======================================================================
+       MAIN CONTENT: EXACTLY 6 MAIN CONTENT SECTIONS (HOME 1)
+       ====================================================================== -->
+  <main id="main-content">
+
+    <!-- --------------------------------------------------------------------
+         SECTION 1: HERO TASTING BAR EXPERIENCE (Asymmetric Editorial)
+         -------------------------------------------------------------------- -->
+    <section class="hero-section" id="hero-experience">
+      <div class="container-custom">
+        <div class="hero-grid">
+
+          <!-- Content Side -->
+          <div class="hero-content">
+            <span class="section-eyebrow">The Sommelier Tasting Room</span>
+            <h1 class="hero-heading">
+              Pure Mediterranean Nectar, <span class="accent-italic">Tasted From Single Groves.</span>
+            </h1>
+            <p class="hero-lead">
+              Walk-in guided flights of single-estate green press oils and century-old solera balsamics, poured fresh at
+              our counter.
+            </p>
+
+            <div class="hero-actions-row">
+              <a href="#tasting-ritual" class="btn-primary">
+                <span>Explore Tasting Ritual</span>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <path d="M5 12h14M12 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+              <a href="#curated-reserves" class="btn-secondary">
+                <span>Browse Harvest Reserves</span>
+              </a>
+            </div>
+
+            <div class="hero-stats-row">
+              <div class="hero-stat-item">
+                <span class="hero-stat-num">4 Hrs</span>
+                <span class="hero-stat-label">Harvest to First Press</span>
+              </div>
+              <div class="hero-stat-item">
+                <span class="hero-stat-num">25 Yr</span>
+                <span class="hero-stat-label">Solera Barrel Aged</span>
+              </div>
+              <div class="hero-stat-item">
+                <span class="hero-stat-num">100%</span>
+                <span class="hero-stat-label">Cold-Pressed PDO</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Visual Media Side -->
+          <div class="hero-media-wrapper">
+            <div class="hero-main-photo-frame">
+              <img src="assets/images/hero/p1.jpg" alt="Artisan tasting counter with olive oils and balsamic cruets">
+            </div>
+
+            <!-- Floating Credential Card -->
+            <div class="hero-floating-badge">
+              <div class="badge-icon-box">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                </svg>
+              </div>
+              <div>
+                <div class="badge-text-title">Daily Guided Flights</div>
+                <div class="badge-text-sub">Led by Master Olive Oil Sommeliers</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         SECTION 2: 4-STAGE SOMMELIER TASTING RITUAL (Interactive Flow)
+         -------------------------------------------------------------------- -->
+    <section class="ritual-section section-padding" id="tasting-ritual">
+      <div class="container-custom">
+
+        <div class="section-title-wrap">
+          <span class="section-eyebrow">The Sommelier Method</span>
+          <h2 class="section-heading">How We Taste at the Bar</h2>
+          <p class="section-lead">
+            Authentic extra virgin olive oils reveal their terroir through a disciplined four-stage sensory ritual.
+          </p>
+        </div>
+
+        <div class="ritual-split-grid">
+
+          <!-- Editorial Showcase Photo -->
+          <div class="ritual-showcase-img">
+            <img src="assets/images/sections/p2.jpg"
+              alt="Sommelier pouring fresh golden extra virgin olive oil into tasting glass">
+          </div>
+
+          <!-- Step Progression List -->
+          <div class="ritual-steps-container">
+
+            <div class="ritual-step-item">
+              <div class="step-num-badge">01</div>
+              <div class="step-info">
+                <h3 class="step-info-title">Warm the Cobalt Glass</h3>
+                <p class="step-info-desc">
+                  Cup the glass in your palm to warm the oil to 28&deg;C, releasing volatile terpenes and aromatics.
+                </p>
+              </div>
+            </div>
+
+            <div class="ritual-step-item">
+              <div class="step-num-badge">02</div>
+              <div class="step-info">
+                <h3 class="step-info-title">Inhale the Orchard Bouquet</h3>
+                <p class="step-info-desc">
+                  Swirl gently and inhale deeply to detect fresh cut grass, green artichoke, and almond blossoms.
+                </p>
+              </div>
+            </div>
+
+            <div class="ritual-step-item">
+              <div class="step-num-badge">03</div>
+              <div class="step-info">
+                <h3 class="step-info-title">The Strippaggio Aeration</h3>
+                <p class="step-info-desc">
+                  Slurp briskly with teeth closed to atomize oil droplets across all palate tastebuds.
+                </p>
+              </div>
+            </div>
+
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         SECTION 3: CURATED HARVEST RESERVES (Even Cards, Equal Height & Text)
+         -------------------------------------------------------------------- -->
+    <section class="reserve-section section-padding" id="curated-reserves">
+      <div class="container-custom">
+
+        <div class="section-title-wrap">
+          <span class="section-eyebrow">Cellar Selections</span>
+          <h2 class="section-heading">Featured Harvest Flight</h2>
+          <p class="section-lead">
+            Four signature harvest reserves sourced directly from single-estate growers in Sicily, Modena, Jaén, and
+            Kalamata.
+          </p>
+        </div>
+
+        <div class="reserve-grid">
+
+          <!-- Card 1: Sicily Nocellara -->
+          <article class="reserve-card">
+            <div class="reserve-img-wrap">
+              <img src="assets/images/products/p3.jpg" alt="Sicilian Nocellara del Belice Extra Virgin Olive Oil">
+              <span class="reserve-origin-tag">Sicily, Italy</span>
+            </div>
+            <div class="reserve-card-body">
+              <span class="reserve-varietal"> Nocellara Del Belice</span>
+              <h3 class="reserve-product-title">Valle Del Belice Early Harvest EVOO</h3>
+              <p class="reserve-notes">
+                Bright green oil with notes of tomato leaf, wild herbs, and a vibrant peppery finish.
+              </p>
+              <div class="reserve-card-footer">
+                <span class="reserve-price">$38.00</span>
+                <a href="tasting-bar.html#reserve-stool" class="reserve-taste-btn">Taste at Bar</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Modena Traditional Balsamic -->
+          <article class="reserve-card">
+            <div class="reserve-img-wrap">
+              <img src="assets/images/products/p4.jpg" alt="Traditional Aged Balsamic Vinegar of Modena DOP">
+              <span class="reserve-origin-tag">Modena, Italy</span>
+            </div>
+            <div class="reserve-card-body">
+              <span class="reserve-varietal">Trebbiano &amp; Lambrusco </span>
+              <h3 class="reserve-product-title">Tradizionale Extravecchio 25-Year</h3>
+              <p class="reserve-notes">
+                Aged in oak and juniper casks. Dense syrup with ripe fig, plum, and velvety sweetness.
+              </p>
+              <div class="reserve-card-footer">
+                <span class="reserve-price">$94.00</span>
+                <a href="tasting-bar.html#reserve-stool" class="reserve-taste-btn">Taste at Bar</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Spanish Picual -->
+          <article class="reserve-card">
+            <div class="reserve-img-wrap">
+              <img src="assets/images/products/p5.jpg" alt="Spanish Picual Single Estate Reserve Olive Oil">
+              <span class="reserve-origin-tag">Jaén, Spain</span>
+            </div>
+            <div class="reserve-card-body">
+              <span class="reserve-varietal">Early Picual Estate</span>
+              <h3 class="reserve-product-title">Sierra De Cazorla Robust Reserve</h3>
+              <p class="reserve-notes">
+                Tested 550+ mg/kg polyphenols with fresh olive leaf aroma and persistent peppery bite.
+              </p>
+              <div class="reserve-card-footer">
+                <span class="reserve-price">$42.00</span>
+                <a href="tasting-bar.html#reserve-stool" class="reserve-taste-btn">Taste at Bar</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4: Greek Koroneiki -->
+          <article class="reserve-card">
+            <div class="reserve-img-wrap">
+              <img src="assets/images/products/p6.jpg" alt="Greek Koroneiki Cold Pressed Olive Oil from Peloponnese">
+              <span class="reserve-origin-tag">Kalamata, Greece</span>
+            </div>
+            <div class="reserve-card-body">
+              <span class="reserve-varietal">Generational Koroneiki</span>
+              <h3 class="reserve-product-title">Peloponnese Golden Harvest EVOO</h3>
+              <p class="reserve-notes">
+                Silky texture featuring golden apple sweetness, fresh rosemary, and a delicate buttery finish.
+              </p>
+              <div class="reserve-card-footer">
+                <span class="reserve-price">$36.00</span>
+                <a href="tasting-bar.html#reserve-stool" class="reserve-taste-btn">Taste at Bar</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         SECTION 4: MEDITERRANEAN CELLAR & SOLERA TRADITION (3 Authentic Heritage Images)
+         -------------------------------------------------------------------- -->
+    <section class="solera-section section-padding" id="solera-heritage">
+      <div class="container-custom">
+
+        <!-- Section Heading -->
+        <div class="section-header text-center" style="margin-bottom: 2.5rem;">
+          <span class="section-eyebrow">Generational Craft</span>
+          <h2 class="section-heading">Solera Barrel Battery &amp; Cold Press Heritage</h2>
+        </div>
+
+        <!-- 3 Images Grid -->
+        <div class="solera-tri-grid">
+
+          <!-- Image 1: 5 Woods Solera Battery -->
+          <div class="solera-tri-card">
+            <div class="solera-media-frame">
+              <img src="assets/images/sections/solera_oak_barrels.jpg"
+                alt="5 Woods Solera Battery graduating oak, chestnut, and juniper barrels in authentic Modena cellar"
+                loading="lazy">
+              <div class="solera-wood-badge">
+                <div class="solera-wood-badge-val">5 Woods</div>
+                <div class="solera-wood-badge-lbl">Solera Battery</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Image 2: Sub-27°C Cold Extraction Mill -->
+          <div class="solera-tri-card">
+            <div class="solera-media-frame">
+              <img src="assets/images/sections/cold_press_milling.jpg"
+                alt="Sub-27°C traditional granite millstone cold pressing olives into extra virgin olive oil"
+                loading="lazy">
+              <div class="solera-wood-badge">
+                <div class="solera-wood-badge-val">Sub-27°C</div>
+                <div class="solera-wood-badge-lbl">Cold Extraction</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Image 3: Annual Rincalzo Decanting -->
+          <div class="solera-tri-card">
+            <div class="solera-media-frame">
+              <img src="assets/images/sections/rincalzo_balsamic_decanting.jpg"
+                alt="Annual Rincalzo decanting with pipette by master artisan from aged cask" loading="lazy">
+              <div class="solera-wood-badge">
+                <div class="solera-wood-badge-val">Annual</div>
+                <div class="solera-wood-badge-lbl">Rincalzo Decanting</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         SECTION 5: SOMMELIER FLIGHT PAIRINGS (Asymmetric 4-Image Gastronomy Bento)
+         -------------------------------------------------------------------- -->
+    <section class="pairing-section section-padding" id="gastronomy-pairings">
+      <div class="container-custom">
+
+        <!-- Section Heading (No body text) -->
+        <div class="section-header text-center" style="margin-bottom: 2.5rem;">
+          <span class="section-eyebrow">Culinary Pairings</span>
+          <h2 class="section-heading">Curated Tasting Flight Pairings</h2>
+        </div>
+
+        <!-- Asymmetric 4-Image Gastronomy Bento Grid -->
+        <div class="pairing-bento-grid">
+
+          <!-- 1. Featured Hero Card (Left, Spans 2 Rows on Desktop) -->
+          <div class="pairing-bento-card card-featured">
+            <div class="pairing-bento-media">
+              <img src="assets/images/sections/pairing_burrata_evoo.jpg"
+                alt="Pugliese burrata drizzled with high-polyphenol picual extra virgin olive oil" loading="lazy">
+              <div class="pairing-bento-badge">
+                <span class="pairing-badge-dish">Pugliese Burrata</span>
+                <span class="pairing-badge-oil">Robust Picual EVOO</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Wide Card (Right Top) -->
+          <div class="pairing-bento-card card-wide">
+            <div class="pairing-bento-media">
+              <img src="assets/images/sections/pairing_balsamic_parmigiano.jpg"
+                alt="36-month aged Parmigiano-Reggiano chunks drizzled with 25-year aged Modena balsamic vinegar"
+                loading="lazy">
+              <div class="pairing-bento-badge">
+                <span class="pairing-badge-dish">36-Mo Parmigiano</span>
+                <span class="pairing-badge-oil">25-Yr Balsamic</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Compact Card (Right Bottom Left) -->
+          <div class="pairing-bento-card card-compact">
+            <div class="pairing-bento-media">
+              <img src="assets/images/sections/pairing_carpaccio_citrus.jpg"
+                alt="Mediterranean sea bass crudo carpaccio dressed with organic lemon crushed agrumato olive oil"
+                loading="lazy">
+              <div class="pairing-bento-badge">
+                <span class="pairing-badge-dish">Sea Bass Crudo</span>
+                <span class="pairing-badge-oil">Lemon Agruma </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Compact Card (Right Bottom Right) -->
+          <div class="pairing-bento-card card-compact">
+            <div class="pairing-bento-media">
+              <img src="assets/images/sections/pairing_sourdough_dip.jpg"
+                alt="Rustic warm sourdough bread dipping into artisan olive oil and dense balsamic swirl"
+                loading="lazy">
+              <div class="pairing-bento-badge">
+                <span class="pairing-badge-dish">Artisan Sourdough</span>
+                <span class="pairing-badge-oil">Solera Reser </span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         SECTION 6: CELLAR TASTING BAR RESERVATION (Mandatory Last Section CTA)
+         -------------------------------------------------------------------- -->
+    <section class="cta-cellar-section" id="tasting-bar-reservation">
+      <div class="cta-cellar-bg-overlay" aria-hidden="true"></div>
+
+      <div class="container-custom">
+        <div class="cta-cellar-container">
+
+          <span class="cta-badge">Daily Tasting Counter</span>
+          <h2 class="cta-title">Begin Your Guided Mediterranean Flight</h2>
+          <p class="cta-subtitle">
+            Walk-ins welcome for quick sips. Reserve cellar tables for guided sensory flights with our sommelier.
+          </p>
+
+          <!-- Interactive Flight Reservation Box -->
+          <div class="cta-booking-box">
+            <form
+              onsubmit="event.preventDefault(); alert('Tasting Flight Reservation Request Received! Our Cellar Sommelier will confirm via email.');">
+              <div class="booking-form-grid">
+
+                <div class="booking-field-group">
+                  <label class="booking-label" for="booking-flight">Tasting Flight</label>
+                  <select id="booking-flight" class="booking-select" required>
+                    <option value="classic">Mediterranean Grand Flight (6 Oils + 4 Vinegars)</option>
+                    <option value="balsamic">Modena Solera Masterflight (Rare 12, 18, 25-Yr Casks)</option>
+                    <option value="harvest">Fresh Press Early Harvest Showcase (High Polyphenol)</option>
+                  </select>
+                </div>
+
+                <div class="booking-field-group">
+                  <label class="booking-label" for="booking-guests">Number of Guests</label>
+                  <select id="booking-guests" class="booking-select" required>
+                    <option value="1">1 Connoisseur</option>
+                    <option value="2" selected>2 Guests (Tasting for Two)</option>
+                    <option value="4">Small Party (4 Guests)</option>
+                    <option value="8">Private Cellar Room (6–10 Guests)</option>
+                  </select>
+                </div>
+
+                <div class="booking-field-group">
+                  <label class="booking-label" for="booking-date">Date &amp; Time Slot</label>
+                  <input type="text" id="booking-date" class="booking-input" placeholder="Tomorrow at 4:00 PM" required>
+                </div>
+
+              </div>
+
+              <button type="submit" class="cta-reserve-btn">
+                Confirm Cellar Flight Reservation
+              </button>
+            </form>
+
+            <p class="cta-guarantee-note">
+              Complimentary rustic sourdough, palate cleansers, and flight notes included.
+            </p>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================================================================
+       SHARED FOOTER
+       ====================================================================== -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="container-custom footer-grid">
+
+        <!-- Brand Story -->
+        <div class="footer-brand">
+          <a href="index.html" class="footer-brand-logo">
+            <div class="footer-crest">
+              <img src="assets/images/icons/logo.png" alt="Olive &amp; Cruet Artisans">
+            </div>
+            <div>
+              <div class="footer-brand-title">Olive &amp; Cruet</div>
+              <div class="footer-brand-sub">Artisan Tasting Room</div>
+            </div>
+          </a>
+          <p class="footer-desc">
+            Curating rare cold-pressed extra virgin olive oils and traditionally aged Modena balsamics directly from
+            generational Mediterranean groves.
+          </p>
+          <div class="footer-badge">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <span>Certified PDO &amp; PGI Harvest Direct</span>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="footer-col-title">Artisan Selection</h4>
+          <ul class="footer-links">
+            <li><a href="products.html">Single-Estate Olive Oils</a></li>
+            <li><a href="products.html">Aged Balsamic Vinegars</a></li>
+            <li><a href="products.html">Infused &amp; Citrus Reserves</a></li>
+            <li><a href="products.html">Artisan Cruets &amp; Dishes</a></li>
+            <li><a href="products.html">Curated Gift Collections</a></li>
+          </ul>
+        </div>
+
+        <!-- Tasting Bar & Hours -->
+        <div>
+          <h4 class="footer-col-title">Tasting Bar</h4>
+          <ul class="footer-links">
+            <li><a href="tasting-bar.html">Guided Tasting Flights</a></li>
+            <li><a href="events.html">Private Evening Masterclasses</a></li>
+            <li><a href="about.html">Olive Harvest Calendar</a></li>
+            <li><a href="contact.html">Sommelier Consultations</a></li>
+            <li><a href="contact.html">Visit our Cellar &amp; Bar</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter & Hours -->
+        <div class="footer-newsletter">
+          <h4 class="footer-col-title">Harvest Journal</h4>
+          <p>Receive exclusive invitations to fresh press arrivals and seasonal balsamic releases.</p>
+          <form class="newsletter-form"
+            onsubmit="event.preventDefault(); alert('Thank you for subscribing to our Harvest Journal!');">
+            <input type="email" class="newsletter-input" placeholder="Your email address" required
+              aria-label="Email Address">
+            <button type="submit" class="newsletter-btn">Subscribe</button>
+          </form>
+          <p style="margin-top: 1rem; font-size: 0.8rem; color: #CBC5B8;">
+            Tasting Room: Tue – Sun: 10:00 AM – 7:00 PM
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+      <div class="container-custom footer-bottom-inner">
+        <p class="footer-copy">
+          &copy; 2026 Olive &amp; Cruet Specialty Tasting Shop. All Rights Reserved.
+        </p>
+        <p class="footer-copy">
+          Crafted for Mediterranean Olive Oil &amp; Balsamic Connoisseurs.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======================================================================
+       SCROLL TO TOP FLOATING BUTTON
+       ====================================================================== -->
+  <button type="button" id="scroll-top" aria-label="Scroll back to top">
+    <svg viewBox="0 0 24 24" fill="none">
+      <path d="M18 15l-6-6-6 6" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  </button>
+
+  <!-- ======================================================================
+       LOGIN & REGISTRATION MODAL
+       ====================================================================== -->
+  <div class="modal-overlay" id="login-modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <button type="button" class="modal-close-btn" id="modal-close-btn" aria-label="Close dialog">
+        <svg viewBox="0 0 24 24" fill="none" width="18" height="18" stroke="currentColor" stroke-width="2.2">
+          <path d="M18 6L6 18M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+
+      <div class="modal-header">
+        <div class="modal-logo">
+          <img src="assets/images/icons/logo.png" alt="Olive &amp; Cruet Logo">
+        </div>
+        <h3 class="modal-title">Connoisseur Club</h3>
+        <p class="modal-subtitle">Sign in to book private tastings and access member reserves</p>
+      </div>
+
+      <form class="modal-form">
+        <div class="form-group">
+          <label class="form-label" for="login-email">Email Address</label>
+          <input type="email" id="login-email" class="form-input" placeholder="connoisseur@oliveandcruet.com" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="login-password">Password</label>
+          <input type="password" id="login-password" class="form-input" placeholder="••••••••" required>
+        </div>
+        <button type="submit" class="modal-submit-btn">Sign In to Account</button>
+      </form>
+
+      <div class="modal-switch">
+        Don't have an account? <a href="#"
+          onclick="event.preventDefault(); alert('Registration portal opened. You can now create your member profile.');">Register
+          here</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Shared Javascript (No inline scripts) -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

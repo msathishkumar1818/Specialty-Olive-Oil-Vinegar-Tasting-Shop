@@ -1,0 +1,857 @@
+/* ==========================================================================
+   SPECIALTY OLIVE OIL & VINEGAR TASTING SHOP
+   Responsive Breakpoints & Layout Adaptations
+   Tested for: 320, 360, 375, 393, 412, 427, 440, 768, 820, 960, 1024, 1032, 1280, 1440, 1920+
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Desktop & Ultra-wide Screens (1440px - 1920px+)
+   -------------------------------------------------------------------------- */
+@media (min-width: 1440px) {
+  .nav-menu {
+    gap: 2rem;
+  }
+  .hero-heading {
+    font-size: 3.8rem;
+  }
+@media (min-width: 1120px) {
+  .mobile-drawer,
+  .mobile-backdrop {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Medium Desktop & Small Laptops (1024px - 1279px, including 1032px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1279px) and (min-width: 1024px) {
+  .nav-menu {
+    gap: 1.1rem;
+  }
+  .nav-link {
+    font-size: 0.84rem;
+  }
+  .hero-heading {
+    font-size: 3rem;
+  }
+  .reserve-grid {
+    gap: 1.25rem;
+  }
+  .reserve-card-body {
+    padding: 1.1rem;
+  }
+
+  /* Footer 2x2 Symmetrical Grid Alignment at 1032px */
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 3rem 4.5rem;
+  }
+
+  .footer-brand {
+    max-width: 440px;
+  }
+
+  .footer-newsletter {
+    max-width: 440px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Intermediate Tablet Widths (960px - 1119px)
+   Switches cleanly to mobile/tablet menu before single line navigation can wrap
+   -------------------------------------------------------------------------- */
+@media (max-width: 1119px) {
+  .desktop-nav {
+    display: none !important;
+  }
+  
+  .menu-toggle-btn {
+    display: inline-flex !important;
+  }
+
+  /* At 1032px, 960px, 768px and all screens <= 1119px:
+     Dark mode, RTL, and CTA buttons are inside the mobile/tablet menu drawer only */
+  .header-actions .util-btn,
+  .header-actions .header-cta-btn,
+  .header-actions .login-btn {
+    display: none !important;
+  }
+
+  /* Section 3 (Products): Iberian & Aegean Horizontal Wide Cards at 960px - 1119px */
+  .dual-wide-grid {
+    gap: 1.75rem;
+  }
+
+  .wide-estate-card {
+    min-height: auto;
+  }
+
+  .wide-card-img-wrap {
+    width: 36%;
+    max-width: 330px;
+    aspect-ratio: auto;
+  }
+
+  .wide-card-content {
+    padding: 1.35rem 1.6rem;
+  }
+
+  .wide-card-desc {
+    margin-bottom: 0.85rem;
+  }
+
+  .product-metrics-row {
+    margin-bottom: 0.95rem;
+  }
+
+  /* Section 2 (Events): Masterclasses at 960px - 1119px (including 1032px & 960px) */
+  .event-cards-grid {
+    gap: 1.25rem;
+  }
+
+  .event-master-card {
+    min-height: 480px;
+    padding: 1.25rem 1.15rem;
+  }
+
+  .event-card-title {
+    font-size: 1.22rem;
+    min-height: 3rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .event-instructor-tag {
+    font-size: 0.68rem;
+  }
+
+  .event-price-val {
+    font-size: 1.2rem;
+  }
+
+  .event-action-btn {
+    padding: 0.42rem 0.85rem;
+    font-size: 0.72rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Tablets (768px - 959px - iPad portrait, 768, 820)
+   -------------------------------------------------------------------------- */
+@media (max-width: 959px) {
+  :root {
+    --header-height: 66px;
+  }
+
+  /* CTA button is positioned strictly inside the mobile drawer */
+  .header-actions .header-cta-btn,
+  .header-actions .login-btn {
+    display: none !important;
+  }
+
+  .section-padding {
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+  }
+
+  .hero-section {
+    padding: 2.5rem 0 3.5rem;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .ritual-split-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .solera-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .pairing-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .hero-floating-badge {
+    bottom: -1rem;
+    left: 1rem;
+    padding: 0.75rem 1rem;
+  }
+
+  [dir="rtl"] .hero-floating-badge {
+    left: auto;
+    right: 1rem;
+  }
+
+  /* Tasting Bar Page Adaptations (Tablet 768px - 959px, iPad, iPad Mini) */
+  .bar-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 2.25rem;
+  }
+
+  .flights-grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .accoutrements-grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+  }
+
+  .ritual-dual-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  /* Section 3 (Home 2): Private Cask Reserves tablet adjustments */
+  .cask-grid {
+    gap: 1rem;
+  }
+
+  .cask-card-body {
+    padding: 1.25rem 1rem;
+  }
+
+  .cask-vintage-stat {
+    font-size: 1.15rem;
+    white-space: nowrap;
+  }
+
+  .reserve-taste-btn {
+    padding: 0.42rem 0.75rem;
+    font-size: 0.72rem;
+    white-space: nowrap;
+  }
+
+  /* Events Page Section 2 (Masterclass Lineup at 768px - 959px) */
+  .event-cards-grid {
+    gap: 0.95rem;
+  }
+
+  .event-master-card {
+    min-height: 470px;
+    padding: 1.15rem 0.95rem;
+  }
+
+  .event-date-pill {
+    padding: 0.3rem 0.6rem;
+  }
+
+  .event-date-day {
+    font-size: 1.2rem;
+  }
+
+  .event-seats-pill {
+    padding: 0.3rem 0.65rem;
+    font-size: 0.68rem;
+  }
+
+  .event-card-title {
+    font-size: 1.12rem;
+    min-height: 2.8rem;
+    margin-bottom: 0.65rem;
+  }
+
+  .event-instructor-tag {
+    font-size: 0.65rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .event-card-meta-row {
+    margin-bottom: 0.55rem;
+  }
+
+  .event-meta-time {
+    font-size: 0.72rem;
+  }
+
+  .event-price-val {
+    font-size: 1.15rem;
+  }
+
+  .event-action-btn {
+    padding: 0.38rem 0.75rem;
+    font-size: 0.7rem;
+  }
+
+  /* Tasting Bar Page: Flight Accordion Showcase Tablet */
+  .flight-accordion-showcase {
+    height: 480px;
+    gap: 0.85rem;
+  }
+
+  .flight-panel {
+    padding: 1.25rem 1rem;
+  }
+
+  .flight-name {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .flight-price-tag {
+    font-size: 1.25rem;
+  }
+
+  .flight-book-btn {
+    padding: 0.45rem 1rem;
+    font-size: 0.72rem;
+  }
+
+  /* Contact Page Adaptations (Tablet 768px - 959px, iPad, iPad Mini) */
+  .contact-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 2.25rem;
+  }
+
+  .visit-grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .enquiry-split-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .map-container-frame {
+    height: 380px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Phablets & Large Mobiles (440px, 427px, 412px, 393px - iPhone Pro Max, Pixel)
+   -------------------------------------------------------------------------- */
+@media (max-width: 767px) {
+  :root {
+    --header-height: 62px;
+  }
+
+  .section-padding {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  /* Keep header ultra-compact and aligned */
+  .brand-crest {
+    width: 38px;
+    height: 38px;
+  }
+
+  .brand-title {
+    font-size: 0.95rem;
+  }
+
+  .brand-subtitle {
+    font-size: 0.55rem;
+    letter-spacing: 0.12em;
+  }
+
+  /* Hide header utility buttons and header CTA on mobile.
+     The CTA button is placed strictly INSIDE the mobile menu drawer */
+  .header-actions .util-btn {
+    display: none;
+  }
+
+  .header-actions .login-btn,
+  .header-actions .header-cta-btn {
+    display: none !important;
+  }
+
+
+  .menu-toggle-btn {
+    width: 36px;
+    height: 36px;
+  }
+
+  .hero-heading {
+    font-size: 2.2rem;
+  }
+
+  .hero-stats-row {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+  }
+
+  .hero-stat-num {
+    font-size: 1.5rem;
+  }
+
+  .hero-stat-label {
+    font-size: 0.68rem;
+  }
+
+  .ritual-step-item {
+    padding: 1rem;
+    gap: 0.85rem;
+  }
+
+  .step-num-badge {
+    width: 38px;
+    height: 38px;
+    font-size: 1rem;
+  }
+
+  .step-info-title {
+    font-size: 1.1rem;
+  }
+
+  .reserve-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .reserve-product-title {
+    min-height: auto;
+  }
+
+  .reserve-notes {
+    min-height: auto;
+  }
+
+  .mobile-drawer {
+    width: 88%;
+    max-width: 340px;
+  }
+
+  .booking-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-booking-box {
+    padding: 1.5rem 1.15rem;
+  }
+
+  .footer-top {
+    padding: 3rem 0 2rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .footer-bottom-inner {
+    text-align: center;
+    gap: 0.75rem;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .newsletter-btn {
+    width: 100%;
+    padding: 0.7rem;
+  }
+
+  .modal-card {
+    padding: 1.75rem 1.25rem;
+  }
+
+  /* ==========================================================================
+     UNIFIED EQUAL HEIGHT FOR ALL 5 INNER PAGE HERO SECTIONS ON MOBILE (<= 767px)
+     ========================================================================== */
+  .products-hero-section,
+  .events-hero-section,
+  .about-hero-section,
+  .bar-hero-section,
+  .contact-hero-section {
+    min-height: 480px;
+    padding: calc(var(--header-height) + 1.25rem) 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+
+  /* Tasting Bar Page Adaptations (Mobile 360px - 767px, iPhone 13 Pro, Pixel 7/8/9, Galaxy) */
+
+  .bar-hero-heading {
+    font-size: 2rem;
+  }
+
+  .bar-hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .bar-hero-actions a {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .bar-quick-meta {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    text-align: center;
+  }
+
+  .flights-grid-4 {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .accoutrements-grid-3 {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .ritual-dual-grid {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+  }
+
+  .flight-card-title,
+  .flight-card-desc,
+  .accoutrement-title,
+  .accoutrement-desc,
+  .ritual-card-title,
+  .ritual-card-desc {
+    min-height: auto;
+  }
+
+  /* Contact Page Adaptations (Mobile 360px - 767px, iPhone 13 Pro, Pixel 7/8/9, Galaxy) */
+
+  .contact-hero-heading {
+    font-size: 2rem;
+  }
+
+  .contact-hero-actions,
+  .about-hero-actions {
+    flex-direction: column;
+    width: 100%;
+    max-width: 380px;
+    margin: 0 auto;
+  }
+
+  .contact-hero-actions a,
+  .about-hero-actions a {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .contact-quick-stats {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    text-align: center;
+  }
+
+  .visit-grid-4 {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .enquiry-split-grid {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+  }
+
+  .form-row-2 {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .enquiry-form-card,
+  .concierge-box {
+    padding: 1.5rem 1.15rem;
+  }
+
+  .map-container-frame {
+    height: 320px;
+  }
+
+  .map-floating-overlay {
+    position: static;
+    margin-top: 1rem;
+    max-width: 100%;
+  }
+
+  .map-directions-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .visit-title,
+  .visit-desc,
+  .direction-title,
+  .direction-desc {
+    min-height: auto;
+  }
+
+  /* Events Page Section 2 (Masterclass Lineup) Mobile */
+  .event-master-card {
+    min-height: 420px;
+    padding: 1.25rem;
+  }
+
+  .event-card-title {
+    font-size: 1.25rem;
+    min-height: auto;
+    margin-bottom: 0.75rem;
+  }
+
+  /* Tasting Bar Page: Flight Accordion Showcase Mobile */
+  .flight-accordion-showcase {
+    flex-direction: column;
+    height: auto;
+    gap: 1.25rem;
+  }
+
+  .flight-panel {
+    flex: none !important;
+    height: 380px;
+    padding: 1.35rem 1.25rem;
+  }
+
+  .flight-collapsed-bar {
+    display: none;
+  }
+
+  .flight-expanded-content {
+    opacity: 1 !important;
+    pointer-events: auto !important;
+  }
+
+  /* Section 3 (Home 2): Private Cask Reserves mobile */
+  .cask-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .cask-card-body {
+    padding: 1.35rem 1.15rem;
+  }
+
+  /* Sensory Radar Card Responsive Layout (Section 5 Home 2) */
+  .sensory-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+    width: 100%;
+  }
+
+  .sensory-card {
+    padding: 1.25rem 1rem;
+    border-radius: 14px;
+    min-width: 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .sensory-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.4rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    min-width: 0;
+  }
+
+  .sensory-varietal-pill {
+    font-size: 0.66rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+    min-width: 0;
+  }
+
+  .sensory-polyphenol-badge {
+    font-size: 0.68rem;
+    font-weight: 600;
+    padding: 0.2rem 0.5rem;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .sensory-title {
+    font-size: 1.25rem;
+    line-height: 1.3;
+    margin-bottom: 0.5rem;
+  }
+
+  .sensory-desc {
+    font-size: 0.84rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Small Phones (360px - 375px - iPhone SE, small Androids)
+   -------------------------------------------------------------------------- */
+@media (max-width: 375px) {
+  .hero-heading {
+    font-size: 1.95rem;
+  }
+
+  .bar-hero-heading {
+    font-size: 1.75rem;
+  }
+
+  .contact-hero-heading {
+    font-size: 1.75rem;
+  }
+
+  .hero-actions-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-actions-row a {
+    justify-content: center;
+  }
+
+  .hero-stats-row {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .hero-floating-badge {
+    position: static;
+    margin-top: 1rem;
+    max-width: 100%;
+  }
+
+  .hero-main-photo-frame {
+    aspect-ratio: 1 / 1;
+  }
+
+  .flight-card-body,
+  .accoutrement-card-body,
+  .ritual-tool-body,
+  .visit-card-body,
+  .direction-card {
+    padding: 1.15rem;
+  }
+
+  .bar-media-badge-top,
+  .flight-badge-corner,
+  .ritual-media-tag,
+  .contact-media-badge-top,
+  .visit-badge-corner {
+    font-size: 0.65rem;
+    padding: 0.25rem 0.55rem;
+  }
+
+  .form-submit-btn,
+  .society-submit-btn {
+    padding: 0.85rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  .sensory-card {
+    padding: 1.15rem 0.85rem;
+    min-width: 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .sensory-varietal-pill {
+    font-size: 0.63rem;
+    letter-spacing: 0.03em;
+  }
+
+  .sensory-polyphenol-badge {
+    font-size: 0.65rem;
+    padding: 0.18rem 0.45rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Ultra-narrow screens (320px - 359px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 359px) {
+  .header-inner {
+    gap: 0.4rem;
+  }
+
+  .brand-title {
+    font-size: 0.85rem;
+  }
+
+  .brand-subtitle {
+    display: none;
+  }
+
+  .header-actions .login-btn span {
+    display: none;
+  }
+
+  .header-actions .login-btn {
+    padding: 0.45rem;
+    border-radius: 50%;
+  }
+
+  .container-custom {
+    padding-left: 0.85rem;
+    padding-right: 0.85rem;
+  }
+
+  .timeline-guarantee-bar {
+    padding: 1.25rem 1rem;
+    text-align: center;
+  }
+
+  .guarantee-badge-cluster {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .guarantee-specs-row {
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .timeline-stage-card {
+    min-height: 320px;
+  }
+
+  .timeline-item-title {
+    min-height: auto;
+  }
+
+  /* Ultra-narrow sensory header stacking */
+  .sensory-card {
+    padding: 1.15rem 0.85rem;
+  }
+
+  .sensory-card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.45rem;
+  }
+
+  .sensory-varietal-pill {
+    font-size: 0.68rem;
+    letter-spacing: 0.05em;
+    white-space: normal;
+  }
+
+  .sensory-polyphenol-badge {
+    align-self: flex-start;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Accessibility & Reduced Motion
+   -------------------------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
