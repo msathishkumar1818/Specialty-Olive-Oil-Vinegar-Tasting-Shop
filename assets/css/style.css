@@ -3983,7 +3983,7 @@ html.dark .product-price-tag {
   transition: transform var(--transition-fast), border-color var(--transition-fast);
 }
 
-@media (min-width: 640px) {
+@media (min-width: 768px) {
   .wide-estate-card {
     flex-direction: row;
     align-items: stretch;
@@ -4003,7 +4003,7 @@ html.dark .product-price-tag {
   background: var(--bg-elevated);
 }
 
-@media (min-width: 640px) {
+@media (min-width: 768px) {
   .wide-card-img-wrap {
     width: 38%;
     max-width: 360px;

@@ -91,10 +91,12 @@
     min-height: auto;
   }
 
-  .wide-card-img-wrap {
-    width: 36%;
-    max-width: 330px;
-    aspect-ratio: auto;
+  @media (min-width: 768px) {
+    .wide-card-img-wrap {
+      width: 36%;
+      max-width: 330px;
+      aspect-ratio: auto;
+    }
   }
 
   .wide-card-content {
@@ -861,6 +863,27 @@
     white-space: nowrap;
     font-size: 0.74rem;
     padding: 0.38rem 0.85rem;
+  }
+
+  /* Section 3 (Products): Iberian & Aegean Cards Mobile - Full Width Image */
+  .wide-estate-card {
+    flex-direction: column !important;
+  }
+
+  .wide-card-img-wrap {
+    width: 100% !important;
+    max-width: 100% !important;
+    aspect-ratio: 16 / 10 !important;
+    height: auto !important;
+    min-height: 200px;
+    flex-shrink: 0;
+  }
+
+  .wide-card-img-wrap img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    display: block !important;
   }
 }
 
