@@ -161,7 +161,7 @@
   .hero-section {
     min-height: auto;
     display: block;
-    padding: calc(var(--header-height) + 1.75rem) 0 3.5rem;
+    padding: 1.25rem 0 3.5rem;
   }
 
   .hero-grid {
@@ -393,7 +393,7 @@
   .hero-section {
     min-height: auto;
     display: block;
-    padding-top: calc(var(--header-height) + 1.25rem);
+    padding-top: 0.75rem;
     padding-bottom: 2.25rem;
   }
 
@@ -530,8 +530,8 @@
   .about-hero-section,
   .bar-hero-section,
   .contact-hero-section {
-    min-height: 480px;
-    padding: calc(var(--header-height) + 1.25rem) 0 2rem;
+    min-height: 440px;
+    padding: 1.25rem 0 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -770,6 +770,97 @@
     font-size: 0.84rem;
     line-height: 1.5;
     margin-bottom: 1.25rem;
+  }
+
+  /* Home 2 Hero Panorama Mobile (Image 1 Alignment) */
+  .hero-panorama-actions {
+    flex-direction: column;
+    align-items: stretch;
+    max-width: 320px;
+    margin: 0 auto;
+    gap: 0.75rem;
+    width: 100%;
+  }
+
+  .hero-panorama-actions a {
+    width: 100%;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 0.85rem 1.25rem;
+  }
+
+  .hero-panorama-terroir-pills {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    gap: 0.5rem;
+    padding: 0.35rem 1.25rem 0.65rem;
+    margin: 1.5rem -1.25rem 0;
+    justify-content: flex-start;
+  }
+
+  .hero-panorama-terroir-pills::-webkit-scrollbar {
+    display: none;
+  }
+
+  .terroir-pill {
+    flex-shrink: 0;
+    white-space: nowrap;
+    font-size: 0.76rem;
+    padding: 0.38rem 0.85rem;
+  }
+
+  /* Products Page Terroir Filter Bar Mobile (Image 2 Alignment) */
+  .filter-pills-bar {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    gap: 0.5rem;
+    padding: 0.35rem 1.25rem 0.65rem;
+    margin: 1.5rem -1.25rem 0;
+    justify-content: flex-start;
+  }
+
+  .filter-pills-bar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .filter-pill {
+    flex-shrink: 0;
+    white-space: nowrap;
+    font-size: 0.78rem;
+    padding: 0.45rem 1rem;
+  }
+
+  /* Events Page: Schedule Chips Mobile Horizontal Swipe */
+  .events-schedule-pill-group {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    gap: 0.5rem;
+    padding: 0.35rem 1.25rem 0.65rem;
+    margin: 1.5rem -1.25rem 0;
+    justify-content: flex-start;
+  }
+
+  .events-schedule-pill-group::-webkit-scrollbar {
+    display: none;
+  }
+
+  .schedule-badge-chip {
+    flex-shrink: 0;
+    white-space: nowrap;
+    font-size: 0.74rem;
+    padding: 0.38rem 0.85rem;
   }
 }
 

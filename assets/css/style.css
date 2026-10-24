@@ -2860,6 +2860,13 @@ html.dark .modal-submit-btn:hover {
   margin: 0 auto 2.25rem;
 }
 
+.hero-panorama-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .hero-panorama-terroir-pills {
   display: flex;
   flex-wrap: wrap;
